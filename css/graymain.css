@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200);
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.eot');
+  src: url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.woff') format('woff'), url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+.inner-page .sponsors, .inner-page .footer{
+		display: none;
+	}
+.sponsors {
+	background-color: #6b8cbe;
+	text-align:center;
+	border-top: 4px solid #1561a0;
+	text-transform: uppercase;
+	height: 200px;
+}
+.sponsors{
+		height: auto;
+}
+
+
+.sponsors div h3 {
+	color: #1561a0;
+	font-family: 'Titillium Web', sans-serif;
+	font-size:1em;
+}
+
+.thanks {
+	padding:15px;
+	background-color: #1561a0;
+	font-family: 'Titillium Web', sans-serif;
+	color:white;
+	font-size:1.2em;
+	text-transform: uppercase;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	box-shadow: 0px 1px 5px #363636;
+}
+
+#footerDoubleHelix img, #footerHelix img {
+	max-height: 80px;
+}
+
+.logo-row {
+	padding-bottom:30px;
+}
+.big-footer {
+	margin-bottom:30px;
+	padding-bottom:0px;
+	padding-top:50px;
+}
+.big-footer p span {
+	float:right;
+}
+
+.big-footer div a {
+	display: block;
+	padding-bottom:10px;
+}
+.big-footer{
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+.home-accordion .collapse{
+	display: block ;
+}
+.home-accordion h3{
+	font-size: 20px;
+	color: #005699;
+	border-top:1px solid #e3e3e3;
+	cursor: pointer;
+	padding-top: 15px;
+	margin-bottom: 0px;
+}
+.home-accordion div:first-child h3{
+	border-top: 0px;
+}
+.home-accordion h3:after{
+	font-family: 'Glyphicons Halflings';
+	float: right;
+	font-size: 12px;
+	color: #6b8cbe;
+}
+.home-accordion .col-md-4.middle{
+	border: 0px;
+}
+.home-accordion .in{
+	padding-top: 15px;
+}
+
+
+	.col-md-4.middle {
+	border-left: 2px solid #e7e6e6;
+	border-right: 2px solid #e7e6e6;
+}
+.footer-menu {
+	float:right;
+}
+
+.footer-menu a {
+	color:white;
+}
+
+.address {
+	float:left;
+}
+
+.sub-footer .address {
+	margin-left: -5px;
+}
+
+.sub-footer {
+	margin-top: -4%;
+	background-color:#00386c;
+	color:white;
+	padding:30px;
+	margin-left:-20px;
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 0.05em;
+	font-weight: 200;
+	font-size: .8em;
+}
+
+.sub-footer p {
+	margin-bottom:0px;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+.footer h3 {
+	color:#508bb9;
+	margin-top:0px;
+}
+
+.footer .col-md-4 {
+	padding: 0 3% 5% 3%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+.footer-menu {
+	float:right;
+}
+
+.footer-menu a {
+	color:white;
+}
+
+.sub-footer .address {
+	margin-left: -5px;
+}
+
+.border {
+	padding:5px;
+	box-shadow: 0px 0px 5px #464646;
+	margin: 20px;
+}
+
+
+.footer-menu {
+        float: none;
+    }
+    .footer-link ul {
+        margin-left: 5px;
+    }
+    .footer-link li {
+        padding:20px;
+    }
+   .footer-link ul {
+	list-style-type: none;
+	padding-left:0px;
+	margin-left:-20px;
+	color:#6b8cbe;
+	padding-bottom:0px;
+	font-weight:400;
+}
+
+.footer-link li {
+	display: inline;
+	padding:20px;
+	font-family: 'Titillium Web', sans-serif;
+}

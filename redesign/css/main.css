@@ -1,0 +1,5860 @@
+/*	Fonts	*/
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,900,700italic,700,600italic,600,400italic,300italic,300,200italic,200);
+@import url(https://fonts.googleapis.com/css?family=Varela);
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.eot');
+  src: url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.woff') format('woff'), url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('http://convention.bio.org/redesign/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+/*	Extra	*/
+
+.nav > li > a:hover, .nav > li > a:focus{
+	background: none;
+	border: 0px;
+}
+input,input:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+.form-control {
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	transition: none;
+}
+
+html {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+  background-color: #FFFFFF;
+  -webkit-text-stroke-width: .1px;
+  margin-bottom: -20px;
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 22px;
+}
+ul{
+	padding-left: 20px;
+}
+.container {
+	width: 1010px;
+}
+
+.affix {
+	position: fixed;
+	z-index: 3;
+}
+.affix-top {
+	position:relative;
+	margin-bottom:-45px;
+	z-index: 3;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: 'Titillium Web', sans-serif;
+font-weight: 500;
+line-height: 1.1;
+}
+
+h1 {
+	color:#005699;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #005699;
+}
+
+h3 {
+	color: #005699;
+}
+
+h4 {
+	font-weight: 400;
+	color: #6e787b ;
+	font-size: 20px;
+	line-height: 24px;
+}
+h5{
+	font-weight: bold;
+	color: #4a5c62;
+}
+p {
+	color: #333;
+	font-size: 15px;
+}
+
+.grey-font {
+	color: #6e787b;
+}
+
+.no-list-style {
+	padding: 0px;
+}
+
+.no-list-style li {
+	list-style-type: none;
+}
+
+/*	Slider	*/
+.carousel-control.left {
+	background-image: none;
+	background-repeat: none;
+	filter: none;
+}
+
+.carousel-control.right {
+	background-image: none;
+	background-repeat: none;
+	filter: none;
+}
+
+.carousel-control {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+width: 20px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+text-shadow: none;
+opacity: none;
+filter: none;
+}
+
+.home-slider {
+	margin-top:45px;
+}
+
+.carousel .item img {
+	width:100%;
+}
+
+.carousel-caption {
+	left:15%;
+	color: #ffffff;
+	text-align: left;
+	text-shadow: none;
+	top:0;
+	margin-top: 100px !important;
+	z-index:1;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+.carousel-caption * {
+	color:white;
+}
+
+.carousel-control span {
+	top: 0px;
+}
+
+.carousel-caption h1 {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	font-size:3.5em;
+}
+
+.carousel-caption h1 a {
+	text-decoration:none;
+	color: white;
+	text-transform: uppercase;
+	font-size:1.3em;
+	font-weight:700;
+}
+
+.carousel-caption p .btn-primary {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-color:white;
+	font-family: 'Varela', sans-serif;
+	font-weight:200;
+	text-transform: uppercase;
+	margin-top:20px;
+	padding:15px 50px 15px 50px;
+	border-radius:0px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-shadow: 1px 1px 5px #000000;
+	text-shadow: 1px 1px 5px #000000;
+}
+
+.carousel-caption p {
+	margin:0px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
+	font-size:2em;
+	text-shadow: 1px 1px 5px #000000;
+	line-height: 35px;
+}
+
+.carousel-indicators li {
+	text-indent: 0px;
+	margin-top: 7px;
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: 55px;
+	z-index: 3;
+	width: 9%;
+	padding-left: 0;
+	margin-top: -5px;
+	text-align: center;
+	list-style: none;
+	margin-left: 0px;
+	left: 45.5%;
+}
+
+.selector-arrows {
+	position: absolute;
+	bottom: 65px;
+	z-index: 2;
+	width: 100%;
+	padding-left: 0px;
+	text-align: center;
+	list-style: none;
+	color:white;
+	/*pointer-events:none;*/
+}
+
+.selector-arrows span {
+	margin:0px 5% 0px 5%;
+}
+/*	Menu	*/
+
+.home-menu {
+	box-shadow: 0px 1px 20px #000000;
+	border:none;
+	border-top:1px solid #252525;
+	border-bottom:5px solid #6775AF;
+}
+
+.static-menu {
+	height:100px;
+	width:100%;
+	z-index:4;
+	position:relative;
+	border-bottom:1px solid #334EA7;
+	background: rgb(0,40,81); /* Old browsers */
+	background: -moz-linear-gradient(to bottom, #000000 0%, #343434 100%); /* FF3.6+ */
+	background: -webkit-gradient(to bottom, #000000 0%, #343434 100%), color-stop(100%,rgba(3,65,112,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(to bottom, #000000 0%, #343434 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(to bottom, #000000 0%, #343434 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(to bottom, #000000 0%, #343434 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #000000 0%, #343434 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002851', endColorstr='#034170',GradientType=0 ); /* IE6-9 */
+	color:	white;	
+}
+
+.static-menu p, .static-menu h2 {
+	color:white;
+}
+
+.static-menu h2 {
+	font-size: 20px;
+}
+
+.header-text {
+	text-align: center;
+	padding-right: 40px;
+	color: white;
+	height: 100px;
+	display: inline-block;
+	right: 13%;
+	left: 13%;
+	top: 0px;
+	position: absolute;	
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.header-text a {
+	color:#5b96c4;
+	padding:4px;
+	font-size: .9em;
+}
+
+.header-text a:before {
+	content: "|";
+	margin-right:5px;
+	text-decoration: none !important;
+	display: inline-block;
+}
+.header-text a:first-child:before {
+	display:none;
+}
+
+.header-text h2 {
+	padding:5px 0px 10px 0px;
+}
+
+.bio-logo {
+	margin-top:-7px;
+	margin-left:0px;
+	position:relative;
+	z-index:5;
+	margin-bottom: -80px;
+	width: 145px;
+}
+
+.navbar-default {
+	background-color:#034170;
+}
+.navbar-nav{
+	float: right;
+}
+.navbar-nav .menu-active {
+	background-color: #6b8cbe !important;
+}
+
+.navbar-nav .menu-active:after {
+	content: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white !important;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: white;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+color: #FFFFFF;
+background-color: #6b8cbe;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+color: inherit;
+text-decoration: none;
+background-color: inherit;
+}
+
+.dropdown-menu .divider {
+	max-width: 155px;
+}
+
+.dropdown-menu ul li {
+	/*width:535px;*/
+	width:400px;
+	padding: 3px;
+}
+
+.dropdown-menu ul li ul li {
+	/*width:165px;*/
+	padding: 3px;
+}
+
+.dropdown-menu ul li a {
+	/*font-weight: 600;*/
+	font-weight: 400;
+	font-style: 1em;
+	/*max-width: 160px;*/
+	max-width: 190px;
+	display: inline-block;
+}
+
+.dropdown-menu ul li ul li a {
+	font-weight: 300;
+	/*max-width: 160px;*/
+	max-width: 190px;
+	display: inline-block;
+}
+
+.dropdown-menu ul li ul {
+	padding-left: 10px;
+	list-style-type: none;
+}
+}
+
+.dropdown-menu a {
+	/*max-width: 160px;*/
+	max-width: 190px;
+	color: #5b96c4;
+}
+.dropdown-menu a:hover {
+	color: #3A74A3;
+	text-decoration: underline;
+	cursor:pointer;
+}
+.nav > li > a {
+/*padding: 13px 15px;
+font-size: 1.0em;*/
+padding: 13px 10px;
+font-size: 0.9em;
+}
+
+.mini-logo {
+	margin-top:10px;
+	padding-right:50px;
+}
+
+#mini-logo {
+	margin:0px;
+	padding: 0px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*	Home-body	*/
+
+.home-pannels {
+	padding-top:30px;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.home-pannels * {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.home-pannels .thumbnail {
+display: inline-block;
+display: block;
+height: auto;
+max-width: 100%;
+padding: 0px;
+line-height: 1.428571429;
+background-color: #ffffff;
+border: 1px solid #dddddd;
+border-radius: 5px;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+height:400px;
+}
+
+.thumb-ico {
+	width:20%;
+	margin-left: 36%;
+	margin-right: 35%;
+	height:50px;
+	margin-top: -10px;
+	z-index: 2;
+	position: absolute;
+	margin-top: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.thumb-ico img {
+	width:25px !important;
+	height:25px !important;
+	margin-top:10px;
+}
+
+.pannel1 .thumb-ico {
+	background-color: rgba(225,112,30,0.7);
+}
+.pannel2 .thumb-ico {
+	background-color: rgba(254,205,77,0.7);
+}
+.pannel3 .thumb-ico{
+	background-color: rgba(193,215,90,0.7);
+}
+
+.home-pannels * a {
+	font-size:1.0em;
+	font-weight:600;
+}
+
+.home-pannels .pannel1 a {
+	color:#e1701e;
+	display:block;
+}
+
+.home-pannels .pannel2 a {
+	color:#ffc222;
+}
+
+.home-pannels .pannel3 a {
+	color:#b1cd31;
+}
+
+.home-pannels .pannel3 div span {
+	background-color:#c1d75a;
+	color:white;
+}
+
+.home-pannels .pannel3 .input-group {
+	padding-left:10%;
+	padding-right:10%;
+	margin-top: -15px;
+}
+
+#signup_form input {
+	width:75%;
+	margin-top: -7px;
+}
+#signup_form button span {
+	margin-left: -5px;
+	height: 34px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+#signup_form button {
+	margin-left: -5px;
+}
+
+.home-pannels .pannel1 .thumbnail {
+	border-top: 5px solid #e1701e;
+}
+
+.home-pannels .pannel2 .thumbnail {
+	border-top: 5px solid #ffc222;
+}
+
+.home-pannels .pannel3 .thumbnail {
+	border-top: 5px solid #b1cd31;
+}
+
+.pannel3 .thumbnail .caption h3 + p {
+	/*border:none;*/
+}
+
+.pannel3 .input-group span {
+	color:white;
+	background-color: #b0cc56;
+}
+
+.home-pannels .caption h3 + p {
+	border-bottom: 1px solid #dddddd;
+	width:80%;
+	padding-bottom:20px;
+	margin:0px 10% 25px 10%;
+}
+
+.home-videos {
+	margin-top:30px;
+	padding-bottom: 30px;
+}
+
+.home-videos * {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+.home-videos h3 {
+	text-align:left;
+	color:#005699;
+}
+
+.home-videos .row {
+	border: 1px solid #dddddd;
+	border-radius:5px;
+	padding-bottom:20px;
+	background-color:white;
+}
+
+.home-videos .play{
+width: 60px;
+height: 50px;
+background-color: #b0cc56;
+position: absolute;
+right: 0;
+bottom: 0%;
+margin-right: 0px;
+margin-bottom: 33px;
+color: white;
+border-top-left-radius: 10px;
+}
+.home-videos .play span {
+	color: white;
+	z-index: 2;
+	position: absolute;
+	font-family: 'Glyphicons Halflings';
+	font-size: 25px;
+	left: 20px;
+	top: 10px;	
+}
+.home-videos.inner-videos .row {
+	border: none;
+	border-radius: 0px;
+	background-color: transparent;
+}
+
+.home-videos.inner-videos .ca-item-main {
+	background: transparent;
+}
+
+.home-videos.inner-videos {
+	background-color: #f4f3f3;
+	box-shadow: 5px 0px 5px 0px #B3B3B3;
+}
+
+.thumbnail img {
+	/*width:100%;*/
+}
+
+.thumbnail .caption {
+padding-bottom: 30px;
+}
+
+.sponsors {
+	background-color: #6b8cbe;
+	text-align:center;
+	border-top: 4px solid #1561a0;
+	text-transform: uppercase;
+	height: 200px;
+}
+
+.sponsors div h3 {
+	color: #1561a0;
+	font-family: 'Titillium Web', sans-serif;
+	font-size:1em;
+}
+
+.thanks {
+	padding:15px;
+	background-color: #1561a0;
+	font-family: 'Titillium Web', sans-serif;
+	color:white;
+	font-size:1.2em;
+	text-transform: uppercase;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	box-shadow: 0px 1px 5px #363636;
+}
+
+.logo-row {
+	padding-bottom:30px;
+}
+
+.ca-item-main p {
+	text-align: left;
+	font-style:italic
+}
+
+.ca-nav {
+z-index: 2;
+position: relative;
+}
+
+.portfolio-item {
+	width: 290px;
+	margin-top:0px;
+}
+
+.slider-switch {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 2;
+	width: 40%;
+	padding-left: 0;
+	margin-left: 30%;
+	margin-right: 30%;
+	text-align: center;
+	height:55px;
+}
+
+.slider-switch div {
+	width:49%;
+	height: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color:rgba(113,133,162,0.8);
+	color:white;
+	display: inline-block;
+	float:left;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+.slider-switch div:hover {
+	background-color:#145e9b;
+}
+
+.slider-switch div a {
+	padding:12px;
+	font-size: 1.5em;
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	line-height: 2.5;
+}
+
+.carousel-picker {
+}
+.home-body {
+	background-color: #f1f1f1;
+}
+
+/*	Footer	*/
+footer {
+	background-color: #FFFFFF;
+}
+
+.twitter {
+	padding:5px 10px 10px 10px;
+	border-radius:0px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border: 5px solid #e7e6e6;
+	font-family: 'Titillium Web', sans-serif;
+	height: 163px;
+	overflow: hidden;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+
+/*.twitter:after {
+	content: url('../images/twitter-arrow.png');
+	position: absolute;
+	right: 70px;
+	margin-top: 140px;
+}*/
+
+.glyphicon {
+	cursor:pointer;
+}
+
+.footer h3 {
+	color:#508bb9;
+	margin-top:0px;
+}
+
+.col-md-4.middle {
+	border-left: 2px solid #e7e6e6;
+	border-right: 2px solid #e7e6e6;
+}
+
+/*.col-lg-4 {
+width: 33.33333333333333%;
+float: left !important;
+}*/
+
+.footer .col-md-4 {
+	padding: 0 3% 5% 3%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.footer-link ul {
+	list-style-type: none;
+	padding-left:0px;
+	margin-left:-20px;
+	color:#6b8cbe;
+	padding-bottom:25px;
+	font-weight:400;
+}
+
+.footer-link li {
+	display: inline;
+	padding:20px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.big-footer {
+	border-bottom: 2px solid #e7e6e6;
+	margin-bottom:30px;
+	padding-bottom:0px;
+	padding-top:50px;
+}
+
+.big-footer .sub-text {
+}
+
+.big-footer p span {
+	float:right;
+}
+
+.big-footer div a {
+	display: block;
+	padding-bottom:10px;
+}
+
+.sub-footer {
+	background-color:#00386c;
+	color:white;
+	padding:30px;
+	margin-left:-20px;
+	font-family: 'Titillium Web', sans-serif;
+	letter-spacing: 0.05em;
+	font-weight: 200;
+	font-size: .8em;
+}
+
+.sub-footer p {
+	margin-bottom:0px;
+	color:white;
+}
+.address {
+	float:left;
+}
+.footer-menu {
+	float:right;
+}
+
+.footer-menu a {
+	color:white;
+}
+
+.sub-footer .address {
+	margin-left: -5px;
+}
+
+nav.social {
+	margin: 0px;
+	position: fixed;
+	left: 0;
+	top: 200px;
+	z-index: 5000;
+}
+
+.social img {
+	padding: 4px;
+}
+
+.social a {
+	width:30px;
+	height:30px;
+	background-color:#6775AF;
+	border-top: 1px solid #75B4E0;
+	border-bottom: 1px solid #252525;
+	cursor:pointer;
+	display: block;
+}
+
+.social a:last-child {
+	border-bottom-right-radius: 5px;
+	border-bottom: none;
+}
+
+.social a:first-child {
+	border-top-right-radius: 5px;
+	border-top: none;
+}
+
+.quick-links-tab {
+	margin: 0px;
+	position: fixed;
+	right: 0px;
+	top: 200px;
+	z-index: 3;
+	display:inline-block;
+	margin-right: 0px;
+	padding-left: 50px;
+	font-family: 'Titillium Web', sans-serif;
+
+}
+
+.quick-links {
+	display: inline-block;
+	background-color: #034170;
+	border: 1px solid #EFF0F5;
+	border-right:none;
+	z-index: 5000;
+	border-left:none;
+	box-shadow: 0px 1px 10px #666666;
+	width: 0px;
+	overflow: hidden;
+	left: 220px;
+	position: relative;
+	z-index: 0;
+}
+
+.quick-links ul {
+	padding-left: 0px;
+	list-style-type:none;
+	margin-bottom: 0px;
+	padding-left:30px;
+	padding-right:30px;
+	color:white;
+	width:220px;
+}
+
+.quick-links a {
+	color:white;
+}
+
+.quick-links ul li {
+	border-top:1px solid #34ECD7;
+	border-bottom: 1px solid #FFFFFF;
+	padding:10px;
+}
+
+.quick-links li:last-child {
+	border-bottom: none;
+}
+
+.quick-links li:first-child {
+	border-top: none;
+}
+
+.quick-links-tab div {
+	display: inline-block;
+	background-color: #6775AF;
+	width: 50px;
+	height: 150px;
+	position: absolute;
+	right: 0px;
+	border: 1px solid #C6D86B;
+	border-right: none;
+	z-index: 1;
+	margin-right: 0px;
+	overflow: hidden;
+}
+
+.quick-links-tab div:before {
+	position: absolute;
+	content: ' ';
+	top: -1px;
+	right: -1px;
+	bottom: -1px;
+	left: -1px;
+	background-color: transparent;
+	box-shadow: -6px 0px 10px rgba(0, 0, 0, 0.28);
+}
+
+.quick-links-tab div p {
+	text-transform: uppercase;
+	font-weight:600;
+	color:white;
+	height: 120px;
+	width: 95px;
+	margin-top: 5px;
+	margin-left: 25px;
+	
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+
+    /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.quick-links li:hover {
+	text-decoration: underline;
+}
+
+.twitter-logo {
+	width: 50px;
+	margin-top: 30px;
+	right: 120px;
+	position: absolute;
+}
+
+.tweet-text {
+	padding-top:40px;
+	font-size:.8em;
+	width:200px;
+}
+
+.tweet-text p {
+	margin:0px;
+}
+
+.tweet-text p a {
+	display: inline-block;
+}
+
+.dropdown-menu {
+	border: 5px solid #6b8cbe;
+	padding:20px;
+	border-bottom-right-radius: 20px;
+	width:auto;
+}
+
+.home-menu li:after {
+	height:20px;
+	content: " ";
+	border-left: 1px solid #012542;
+	border-left: 1px solid #065b9e;	
+	margin-right:-5px;
+	margin-top: -33px;
+	position:absolute;
+}
+
+.home-menu li:hover:after {
+	border-left: 0px solid #012542;
+	border-left: 0px solid #065b9e;	
+}
+
+.home-menu li ul li:after {
+	content: none;
+}
+
+.navbar-nav li:nth-child(2):after, .navbar-nav li ul li:after  {
+	display:none;
+}
+
+.register-text a {
+	display:inline-block;
+	padding: 0px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:-20px;
+	font-weight: 400;
+	color: white;
+	font-size: .85em;
+}
+
+.register {
+	border-bottom-left-radius: 5px;
+	display: inline-block;
+	margin-left:10px;
+	text-transform: uppercase;
+	padding:0px;
+	height: 30px;
+	width:auto;
+}
+
+.register-text a:first-child:after {
+	content: "";
+	color: rgb(44, 44, 44);
+	margin-right: 0px;
+	font-size: 1.5em;
+	font-weight: 200;
+}
+
+.register-text a:before {
+	content: "|";
+	margin-right: 15px;
+	margin-left: -10px;
+	margin-top: -3px;
+	text-decoration: none !important;
+	display: inline-block;
+	font-size: 1.4em;
+	font-weight: 200;
+	color:black;
+}
+
+.register .input-group input {
+	display:inline-block;
+	background-color:#0c5fa0;
+	border:none;
+	height: 35px;
+}
+
+.register .input-group {
+	height:30px;
+}
+
+.register .input-group input, .register .input-group span {
+	height:30px;
+	color:white;
+	max-width: 150px;
+	margin-top: -7px;
+}
+
+.form {
+	display:inline-block;
+}
+
+.header-list {
+	float:left;
+	padding-top:5px;
+	text-transform: none;
+}
+
+.register-text {
+	height: 30px;
+	padding-top:5px;
+	float:left;
+	padding-left:0px;
+	background-color:#054a83;
+	margin-right: 1px;
+	padding-bottom: 5px;
+	border-radius:0 0 0 5px;
+	-moz-border-radius:0 0 0 5px;
+	-webkit-border-radius:0 0 0 5px;
+	margin-left: 10px;
+}
+
+#search_term::-webkit-input-placeholder {
+   color: #fff;
+   opacity: .7;
+}
+
+#search_term:-moz-placeholder { /* Firefox 18- */
+   color: #fff; 
+   opacity: .7; 
+}
+
+#search_term::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+   opacity: .7;
+}
+
+#search_term:-ms-input-placeholder {  
+   color: #fff;  
+   opacity: .7;
+}
+
+.register .input-group-addon {
+	background-color:#0d5fa1;
+	border:none;
+	width:30px;
+	border-radius:0 0 5px 0px;
+	-moz-border-radius:0 0 5px 0px;
+	-webkit-border-radius:0 0 5px 0px;
+}
+
+.register .input-group span span {
+	height:0px;
+}
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+	margin-right: 0px;
+}
+
+.modal-header .close {
+	margin-top: -10px;
+	color:#b1cd31 !important;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.modal-footer p {
+	text-align:left;
+}
+
+.modal-footer {
+	padding: 19px 20px 20px;
+	margin-top: 0px;
+	text-align: right;
+	border-top: none;
+	font-style: italic;
+}
+
+.modal-open iframe {
+	padding:10px;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.left-column-sponsor {
+	background-color: #6b8cbe;
+	padding: 20px 20px 20px 20px;
+	border-radius: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color:white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.left-column-sponsor p {
+	color:white;
+}
+.inner-page .row{
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.myBIO-callout .row{
+	margin:0px;
+}
+.inner-page .myBIO-callout.col-md-3, .inner-page .myBIO-callout .col-sm-3,
+.inner-page .myBIO-callout.col-md-9, .inner-page .myBIO-callout .col-sm-9{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.inner-page .col-md-3, .inner-page .col-sm-3 {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.inner-page .col-md-9, .inner-page .col-sm-9 {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.inner-page .col-md-9 p {
+     clear: both;
+}
+.inner-page.row {
+	margin-top: 116px;
+}
+.left-column {
+}
+.left-column-registration p {
+	font-weight: 600;
+	font-size: 1.2em;
+	color: #005699;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.left-column-registration ul {
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+}
+
+.left-column-registration ul li {
+	color: #87a2ca;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #E7E7E7;
+}
+
+.inner_ad {
+	display:inline-block;
+	padding: 0px;
+	width: 770px;
+	padding-bottom: 20px;
+}
+
+.border {
+	padding:5px;
+	box-shadow: 0px 0px 5px #464646;
+	margin: 20px;
+}
+
+hr {
+	border-top: 1px solid #B1ADAD;
+}
+
+.footer-box {
+	background-color: #f4f3f3;
+	padding:20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #868686;
+	/*margin:20px 0px 20px 0px;*/
+        margin: 0 -10px 15px -15px;
+	clear: both;
+}
+
+.footer-box h3, .footer-box h2  {
+	margin-top: 0px;
+}
+
+.footer-box ul, .green-bullet-ul {
+	list-style-image: url('http://convention.bio.org/redesign/images/green-bullet.png');
+	padding-left: 20px;
+}
+
+ol {
+	padding-left: 20px;
+}
+
+.topBanner h1 {
+	margin-left: 300px;
+	font-size: 3.4em;
+	margin-top: -36px;
+	margin-bottom: -30px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: white;
+	text-shadow: 0px 0px 30px #000;
+}
+
+.topBanner.big-banner h1 {
+	position: relative;
+	left: 300px;
+	top: -85px;
+	margin-left: 0px;
+}
+
+.topBanner.big-banner h2 {
+	position: relative;
+	left: 300px;
+	top: -40px;
+	margin-left: 0px;
+	color: white;
+	text-shadow: 0px 0px 30px #000;
+	width: 550px;
+	margin-top: -36px;
+	margin-bottom: -30px;
+}
+
+.banner {
+	margin-top:45px;
+	width:100%;
+	margin-bottom: -70px;
+}
+
+.ie8 .banner, .ie9 .banner {
+	margin-top: 0px;
+}
+
+.early-bird {
+	border: 1px solid #dddddd;
+	border-top: 5px solid #c1d75a;
+	height: 150px;
+	border-radius:5px;
+	text-align: center;
+	box-shadow: 0px 0px 7px #999999;
+}
+
+.early-bird h2 {
+	padding-top: 35px;
+	color:black;
+	font-weight: 600;
+	font-size: 1.3em;
+}
+
+.early-bird h4 {
+	font-size: 1.2em;
+}
+
+.early-bird .thumb-ico {
+	background-color: #c1d75a;
+	height:40px;
+	width: 20%;
+	margin-left: 34%;
+	margin-right: 34%;
+}
+
+.early-bird .thumb-ico img {
+	width: 25px !important;
+	height: 25px !important;
+	margin-top: 5px;
+}
+
+.contact-text h3 {
+	margin-top: 0px;
+} 
+
+.contact-us {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background-color: #f4f3f3;
+	border-radius: 5px;
+	padding:10px;
+	box-shadow: 0px 0px 7px #999999;
+}
+
+.contact-us input {
+	width:100%;
+	height:30px;
+	border: 1px solid #D9D7D7;
+}
+
+.contact-us table {
+	width: 100%;
+}
+
+.contact-us tr td label {
+	margin-top: 10px;
+}
+
+.contact-us tr td:nth-child(2) {
+	padding-left: 10px;
+}
+
+.contact-us .button {
+	text-align: right;
+	margin:20px;
+	display:inline-block;
+	margin-left: 415px;
+	margin-right: 0px;
+}
+
+.contact-us .button button {
+	background-color: #b1cd31;
+	font-family: 'Titillium Web', sans-serif;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 10px 35px 10px 35px;
+	font-size: 1.3em;
+	color:white;
+	border:none;
+}
+
+.contact-us label {
+	font-family: 'Titillium Web', sans-serif;
+	color:#3F3F3F;
+	font-weight: 600;
+}
+
+.required {
+	font-size: .8em;
+	padding-left: 10px;
+	display: inline-block;
+	font-style: italic;
+}
+
+.select {
+	width:100%;
+	height:30px;
+	border: 1px solid #D9D7D7;
+	background: url(http://convention.bio.org/redesign/images/select-arrow.png) no-repeat right white;
+	overflow:hidden;
+}
+
+.contact-us select {
+	height:30px;
+	background-color: transparent;
+	border:none;
+	overflow:hidden;
+    width: 106%;
+}
+
+.contact-us h2 {
+	color:#2b387e;
+	font-weight: 600;
+}
+
+.blue-box {
+	background-color: #6b8cbe;
+	padding: 15px 5px 15px 5px;;
+	border-radius: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	text-decoration: none;
+
+}
+
+.blue-box p {
+	color:white;
+	font-size: .8em;
+	margin-bottom: 0px;
+}
+.green-box {
+	background-color: #b1cd31 !important;
+	padding: 15px 5px 15px 5px !important;
+	border-radius: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.green-box p {
+	color:white;
+	font-size: .8em;
+	margin-bottom: 0px;
+}
+.btn-green-box{
+	background-color: #b1cd31;
+	padding: 15px;
+	border-radius: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	float: left;
+}
+.pannel, .left-column-pannels aside {
+	border-top: 3px solid #cc171e;
+	padding-top: 10px;
+}
+.pannel h3, .left-column-pannels aside h3, .left-column-pannels aside h2 {
+	color:#cc171e;
+	font-size: 1.1em;
+	font-weight: 700;
+	margin-top:0px;
+}
+
+.pannel p , .left-column-pannels aside p{
+	font-size: .9em;
+	padding-top: 10px;
+}
+
+.pannel img, .left-column-pannels aside img {
+ 	max-width: 150px;
+}
+
+.breadcrumb > li + li:before {
+	content: ">";
+}
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 0px;
+	margin-bottom: 5px;
+	font-family:'Verdana', Arial;
+	font-size: 12px;
+}
+.breadcrumb a{
+	color: #6e787b;
+}
+.input-group button {
+	padding: 0px;
+	background-color: transparent;
+	border: none;
+}
+.alignleft {
+float: left !important;
+margin: 0px 25px 20px 5px;
+}
+
+.quote p {
+    font-size: .8em;
+    padding-top: 10px;
+}
+ul.green-bullets{
+	margin: 0px !important;
+}
+.green-bullets li{
+	list-style-image: url('http://convention.bio.org/redesign/images/green-bullet.png');
+}
+ @-moz-document url-prefix() { 
+  	.ca-nav {
+		margin-top: -45px;
+		margin-left: 93% !important;
+	}
+	.header-text h2 {
+		padding: 15px 0px 10px;
+    	margin-top: 0px;
+	}
+	.register .input-group input, .register .input-group span {
+		margin-top: -25px;
+	}
+	#signup_form input {
+		width:75%;
+		margin-top: -26px;
+		display:inline-block;
+	}
+	#signup_form button span {
+		margin-left: -5px;
+		height: 34px;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	#signup_form button {
+		margin-left: -5px;
+	}
+	.banner {
+    	margin-top: 5px;
+	}
+	#search_term {
+		height: 32px;
+	}
+}
+
+
+/* Registration Page */
+
+td {
+	min-width: 130px !important;
+	padding: 5px;
+	vertical-align: top;
+}
+
+th p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.3;
+    color:white;
+}
+
+th strong {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+th {
+    width:158px;
+    line-height: 1;
+}
+
+.grid {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: separate !important;
+    color:white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.grid tr {
+    background: #f3f3f3;
+}
+.grid tr:nth-child(2n+5) {
+    background: #ededed;
+}
+.grid th:first-child {
+    background: #fff;
+    font-size: 12px;
+    text-align: left;
+    padding: 14px 13px;
+}
+.grid th {
+    background: #f3f3f3;
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: top;
+    padding: 5px;
+    position: relative;
+}
+.grid th h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color:white;
+    font-weight: 600;
+}
+.grid td:first-child {
+    width: 180px;
+    text-align: left;
+    color:#4a5d62;
+}
+.grid td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 13px;
+    overflow: hidden;
+    position: relative;
+}
+.grid th:nth-child(2),
+.grid td:nth-child(2) {
+    border-left:3px solid #b1cd35;
+    border-right:3px solid #b1cd35;
+}
+.grid th:nth-child(2).green-header {
+    background:#b1cd35;
+    border-left:3px solid #b1cd35;
+    border-right:3px solid #b1cd35;
+    border-top:3px solid #b1cd35;
+    border-top-left-radius: 10px;
+}
+    
+.grid th:nth-child(3),
+.grid td:nth-child(3) {
+    border-left:3px solid #6b8cbe;
+    border-right:3px solid #6b8cbe;
+}
+.grid th:nth-child(3).blue-header {
+    background:#6b8cbe;
+}
+.grid .after th {
+    background: transparent;
+    vertical-align: middle;
+    padding: 3px 13px;
+}
+.grid.accordion th:nth-child(1n+4),
+.grid.accordion td:nth-child(1n+4) {
+    display: none;
+}
+.grid tr:last-child td:nth-child(2) {
+    border-bottom:3px solid #b1cd35;    
+    }
+.grid tr:last-child td:nth-child(3) {
+    border-bottom:3px solid #6b8cbe;    
+    }
+.grid tr:last-child .column-1 {
+    border-bottom:3px solid #fcb917;    
+    }
+.grid tr:last-child .column-2 {
+    border-bottom:3px solid #e27126;    
+    }
+.grid tr:last-child .column-3 {
+    border-bottom:3px solid #6e797c;    
+    }
+.grid .column-1 {
+    border-right:3px solid #fcb917; 
+    }   
+.grid .column-2 {
+    border-right:3px solid #e27126; 
+    }
+.grid .column-3 {
+    border-right:3px solid #6e797c;
+    }
+.grid th.column-1 {
+    border-top:3px solid #fcb917;   
+    }
+.grid th.column-2 {
+    border-top:3px solid #e27126;   
+    }
+.grid th.column-3 {
+    border-top:3px solid #6e797c;   
+    }
+
+.grid .slide-bar+.column-3 {
+    border-top-right-radius: 10px;
+}
+.grid .after th,
+.grid th.slide-bar{
+    border-top:none;    
+    }
+.grid .slide-bar {
+    width: 31px;
+    /*background: ##D1E3EB;*/
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0;
+    display: table-cell !important;
+    position: relative;
+    cursor: pointer;
+}
+.grid .column-1.slide-bar {background:#fcb917;}
+.grid .column-2.slide-bar {background:#e27126;}
+.grid .column-3.slide-bar {background:#6e797c;}
+.grid .slide-bar a {
+    width: 100%;
+    min-height: 400px;
+    padding: 10px 0 0 0;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+.grid .slide-bar a span {
+    font: 1px/1px sans-serif;
+    text-indent: -99999px;
+}
+.grid .slide-bar a span { background-position: -307px -356px; }
+.grid .slide-bar a span {
+    width: 20px;
+    height: 18px;
+    background: url(http://convention.bio.org/redesign/images/buttons.png) no-repeat -327px -356px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.open {
+    background: url(http://convention.bio.org/redesign/images/buttons.png) no-repeat -307px -356px !important;
+}
+
+.grid .slide-bar a strong {
+    min-width: 600px;
+    color: white;
+    height: 16px;
+    letter-spacing:1px;
+    white-space: nowrap;
+    text-align: right;
+    /*margin: 170px 0 0 5px;*/
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 345px; right: -282px;
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+.included {
+    width: 17px;
+    height: 17px;
+    font: 1px/1px sans-serif;
+    text-indent: -99999px;
+    margin: 0 auto;
+    display: block;
+}
+.first .included {
+    background: url(http://convention.bio.org/redesign/images/green-check.png) no-repeat;
+}
+.second .included {
+    background: url(http://convention.bio.org/redesign/images/blue-check.png) no-repeat;
+}
+.column-1 .included {
+    background: url(http://convention.bio.org/redesign/images/orange-check.png) no-repeat;
+}
+.column-2 .included {
+    background: url(http://convention.bio.org/redesign/images/red-check.png) no-repeat;
+}
+.column-3 .included {
+    background: url(http://convention.bio.org/redesign/images/gray-check.png) no-repeat;
+}
+
+th.column-1 {
+    background: #fcb917;      
+}
+th.column-2 {
+    background: #e27126;      
+}
+th.column-3 {
+    background: #6e797c;      
+}
+.grid .on-before th {
+    background:#4a5d63;
+    height: 61px;
+}
+.grid .after th {
+    background:#a6abad;
+}
+.grid tr .light-blue {
+    background:#294b77;
+    color:white;
+}
+.grid tr .dark-blue {
+    background:#164271;
+    color:white;
+}
+
+.circle {
+    background: url(http://convention.bio.org/redesign/images/circle.png) no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    margin-top: 370px;
+    margin-left: 115px;
+}
+
+.circle p {
+    width: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    padding-top: 35px;
+    line-height: 1.3;
+}
+
+.pavilion ul li {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid #E7E7E7;
+	margin-left: -1px;
+	margin-top: -1px;
+	width: 20%;
+	text-align: center;
+}
+
+.pavilion p {
+	font-weight: 600;
+}
+.ca-nav .glyphicon{
+	color: #005699;
+}
+/* Hide old sponsors rotator; only use it as a hidden reference for loading the new sponsors rotator */
+aside.sponsors {display:none;}
+#search_term{
+	width: 0px;
+	padding:0px;
+	-webkit-transition: width .5s ease-in;
+	-moz-transition: width .5s ease-in;
+	-ms-transition: width .5s ease-in;
+	-o-transition: width .5s ease-in;
+	transition: width .5s ease-in;
+}
+.active-field{
+	width: 250px;
+	padding:5px;
+}
+.top-search-desktop{
+	margin-top: 0px !important;
+	width: 35px !important;
+}
+.search-form-field{
+	display: none;
+}
+.search-form-field-active{
+	display: block;
+	position: absolute;
+	width: 189px;
+	left: -189px;
+	padding:5px;
+	background-color: 
+}
+.graph{
+	width: 100%;
+	margin: 15px 0;
+}
+.graph img{
+	max-width: 100%;
+}
+/**Registration Tab**/
+.registration-container{
+	width: 100%;
+	background-image:url(http://convention.bio.org/redesign/images/top-tab-bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #f4f3f3;
+	margin-top: 40px;
+}
+.registration-tab{
+
+}
+.visble-active{
+	padding: 10px 0;
+}
+.registration-tab li .visble-active{
+	display: none;
+}
+.registration-tab li.active .visble-active{
+	display: block;
+	color: #39c3db;
+}
+.registration-tab .nav-tabs li a{
+	background-color: #ffffff;
+	border: 1px solid #dfdfdf;
+	box-shadow: 0px 0px 3px #dfdfdf;
+	padding:0 10px;
+	cursor: pointer;
+	bottom: -33px;
+}
+/* styles added */
+.registration-tab .nav-tabs > li {
+    min-height: 260px;
+}
+.registration-tab .nav-tabs > li > a {
+    min-height: 227px;
+}
+.registration-tab .nav-tabs li.active > a {
+    min-height: 260px;
+}
+/* styles added */
+.registration-tab .nav-tabs li.active a{
+	background-color: #f4f3f3;
+	border: 1px solid #dfdfdf;
+	box-shadow: 0px 0px 3px #dfdfdf;
+	bottom: 0px;
+}
+.tab-head.green, .tab-head.blue, .tab-head.orange, .tab-head.light-green{
+	border-top: 4px solid;
+	margin: 0 -10px;
+	border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+}
+.tab-head{
+	padding-bottom:15px; 
+}
+.tab-head.green{
+	border-color:#597c37;
+}
+.tab-head.blue{
+	border-color:#39c3db;
+}
+.tab-head.orange{
+	border-color:#fcb917;
+}
+.tab-head.light-green{
+	border-color:#b1cd35;
+}
+.registration-tab .tab-title{
+	width: 90%;
+	border-bottom: 1px solid #dcdcdc;
+	margin: auto;
+	margin-bottom: 15px;
+}
+.registration-tab .tab-head li{
+	color: #3a3a3a;
+	line-height: 15px;
+}
+.registration-tab .tab-head li .date{
+	color: #ababab;
+	font-size: 11px;
+	font-weight: normal;
+}
+.registration-tab .tab-head li .bold{
+	font-weight: bold;
+}
+.registration-tab .tab-title h4{
+	font-size: 16px;
+	color: #464647;
+}
+.registration-tab .tab-pane .row{
+	margin: 0px -15px;
+	padding: 40px 0;
+}
+.registration-tab .tab-pane ul{
+	list-style: none;
+	padding-left: 0px;
+}
+.registration-tab .tab-pane li{
+	color: #464647;
+	padding: 0px 0 14px 20px;
+	background-image:url(http://convention.bio.org/redesign/images/enabled.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+}
+.registration-tab .tab-pane li.disabled{
+	color: #b0b0b0;
+	background-image:url(http://convention.bio.org/redesign/images/disabled.png);
+}
+.registration-tab .tab-sidebar h3{
+	color: #464647;
+	font-size: 16px;
+	font-weight: bold;
+}
+.registration-tab .left-border{
+	border-right: 1px solid #ddd;
+}
+.tab-description{
+	border-top: 1px solid #ddd;
+	padding: 25px 0;
+}
+.registration-tab .tab-sidebar p{
+	font-size: 16px;
+	font-style: italic;
+}
+/**Registration Tab Ends**/
+@media screen and (min-width:0\0) {
+	.header-text h2 {
+		padding-top: 25px;
+		margin-top: 0px;
+	}
+	.banner {
+		margin-top: 0px !important;
+	}
+	.register .input-group input, .register .input-group span {
+		margin-top: -25px;
+	}
+	#signup_form input {
+		width:75%;
+		margin-top: -27px;
+		display:inline-block;
+	}
+	#signup_form button span {
+		margin-left: -5px;
+		height: 34px;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	#signup_form button {
+		margin-left: -5px;
+	}
+	.banner {
+    	margin-top: 5px;
+	}
+	#search_term {
+		height: 32px;
+	}
+}
+
+.ie8 .quick-links-tab div {
+	background-image:url('http://convention.bio.org/redesign/images/quicklinks.png');
+	background-repeat: no-repeat; 
+	background-size:30px 120px;
+	background-position:center;
+	}
+.ie8 .nav > li > a {
+	font-size: 1.0em;
+	}
+.ie8 .selector-arrows {
+	bottom:30px;
+}
+.ie8 .static-menu h2 {
+	margin-top: 20px;
+}
+
+.ie8 .quick-links-tab div p {
+	display:none;
+}
+.ie8 .slider-switch div {
+	background-color: #7185a2;
+}
+
+.ie8 .slider-switch div:hover {
+	background-color:#145e9b;
+}
+
+.ie8 .pannel1 .thumb-ico {
+	background-color: #e1701e;
+}
+
+.ie8 .pannel2 .thumb-ico {
+	background-color: #fecd4d;
+}
+
+.ie8 .pannel3 .thumb-ico {
+	background-color: #c1d75a;
+}
+
+.ie8 .header-text h2 {
+	padding-top: 0px;
+}
+
+.ie8 .bio-logo, .ie9 .bio-logo {
+	position:absolute;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.twitter:after {
+		margin-top: -8px;
+		display:none;
+	}
+}
+
+#sidebarDoubleHelix img {
+	width:100px;
+}
+
+#footerDoubleHelix img, #footerHelix img {
+	max-height: 80px;
+}
+
+#search_term {
+	margin-right: -5px;
+}
+
+.inner-page.row .col-md-3 {
+	/*margin-left: -80px;
+	margin-right: -20px;*/
+}
+
+.inner-page.row.asyur .col-md-3 {
+	margin-left: 0px;
+}
+
+.asyur + .inner-page {
+	margin-top: 20px;
+}
+
+.asyur {
+	padding-bottom: 20px;
+	border-bottom: 2px solid #E7E7E7;
+}
+
+.asyur .pannel {
+	width:150px;
+	float:right;
+}
+
+.asyur h2 {
+	color: #757575;
+}
+
+.asyur .pannel p {
+	margin:0px;
+}
+
+.asyur .button {
+	margin-top:30px;
+}
+
+.button button {
+	background-color: #b1cd31;
+	font-family: 'Titillium Web', sans-serif;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 10px 35px 10px 35px;
+	font-size: 1.3em;
+	color: white;
+	border: none;
+}
+
+.register-button button {
+	margin-top: -30px;
+	margin-bottom: 100px;
+	float: right;
+}
+
+.register-button p {
+	margin-top: 40px;
+}
+
+.pdf:before {
+	content: url('http://convention.bio.org/redesign/images/pdf.png');
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 2px;
+}
+
+.ie8 .pdf:before, .ie9 .pdf:before, .ie10 .pdf:before {
+	margin-left: -40px;
+}
+
+.pdf {
+	margin-left: 20px;
+}
+
+table.alignleft {
+	width:100%;
+}
+
+
+
+
+
+
+
+
+/*block*/
+.content .block {
+	-webkit-box-shadow:  0px 0px 7px #D7D8D8;
+	box-shadow:  0px 0px 7px #D7D8D8;
+	background:#fff;
+	/*width:776px;*/
+	padding:15px 0 0;
+}
+.content .block h1 {
+	margin:0;
+	/*border-bottom:3px solid #f1efef;*/
+	padding:0 0 18px 22px;
+	color:#00386c;
+	font:bold 20px/27px Verdana, Geneva, sans-serif;
+}
+/*place-holder*/
+.brand-builder .block .place-holder {
+	overflow:hidden;
+	border-bottom:3px solid #f1efef;
+	border-top:1px solid #f7f5f5;
+	padding:6px 0 4px 23px;
+}
+.brand-builder .place-holder .title {
+	float:left;
+	margin:4px 7px 0 0;
+	font-size:11px;
+	color:#959595;
+}
+.place-holder img { float:left; }
+/*text*/
+.brand-builder .block .text {
+	overflow:hidden;
+	border-top:1px solid #f7f5f5;
+	font:bold 15px/18px Verdana, Geneva, sans-serif;
+	color:#636363;
+	padding:18px 52px 20px 23px;
+	background-color:#fff;
+	margin:0px;
+}
+.brand-builder .block .text p {
+	margin:0;
+	word-spacing:1px;
+}
+/*post-holder*/
+
+.brand-builder .block .post-holder {
+	overflow:hidden;
+	padding:14px 18px 47px 25px;
+	background-color:#fff;
+	margin:0px;
+}
+.oldie #container .post-holder .box {
+	border:none;
+}
+/*post*/
+.brand-builder .post-holder .post {
+	height:1%;
+	padding:31px 15px 28px 0;
+	position:relative;
+	background:url(http://convention.bio.org/redesign/images/bg-post.png) repeat-x;
+	margin:0px;
+}
+.brand-builder .post-holder .post:after {
+	display:block;
+	content:"";
+	clear:both;
+}
+.brand-builder .post-holder .post:first-child {
+	background:none;
+	padding:0 8px 23px 0;
+}
+/*number*/
+.brand-builder .post .number {
+	position:absolute;
+	left:0;
+	top:31px;
+	padding:0 2px 0 0;
+	background:url(http://convention.bio.org/redesign/images/bg-number.png) no-repeat;
+	width:54px;
+	color:#fff;
+	font:bold 28px/40px Verdana, Geneva, sans-serif;
+	height:53px;
+	text-align:center;
+}
+.brand-builder .post:first-child .number { top:0; }
+/*entry-content*/
+.brand-builder .post .entry-content {
+	height:1%;
+	font:13px/18px Verdana, Geneva, sans-serif;
+	color:#7d7d7d;
+	padding:0 0 0 71px;
+	background-color:#fff;
+	margin:0px;	
+}
+.brand-builder .post .entry-content:after {
+	display:block;
+	content:"";
+	clear:both;
+}
+.brand-builder .entry-content h2 {
+	margin:0 0 6px;
+	font:bold 16px/18px Verdana, Geneva, sans-serif;
+}
+.brand-builder .entry-content h2 a { color:#005699; }
+.brand-builder .entry-content p {
+	margin:0;
+	word-spacing:-1px;
+}
+.brand-builder .entry-content .event-img {
+	float:right;
+	background: #fff;
+	box-shadow: 0 0 7px #D7D8D8;
+	padding: 5px;
+	margin:20px 0 0 10px;
+}
+/*event-holder*/
+.brand-builder .entry-content .event-holder {
+	overflow:hidden;
+	padding:16px 0 0;
+	margin:0px;
+	background-color:#fff;
+	clear:none;
+}
+/*event-frame*/
+.brand-builder .event-holder .event-frame {
+	overflow:hidden;
+	padding:0 0 16px;
+	background-color:#fff;
+	clear:none;
+	margin:0px;
+}
+/*box*/
+.brand-builder .event-frame .box {
+	width:173px;
+	float:left;
+	margin:0 27px 0 0;
+	padding:0px;
+	background-color:#fff;
+	box-shadow:none;
+	clear:none;
+}
+.brand-builder .event-frame .box h3 {
+	margin:0 0 5px;
+	color:#7d7d7d;
+	text-transform:capitalize;
+	font:bold 13px/18px Verdana, Geneva, sans-serif;
+}
+.brand-builder .event-frame .box ul {
+	padding:0 0 0 2px;
+	margin:0;
+	list-style:none;
+}
+.brand-builder .event-frame .box ul li {
+	background:url(http://convention.bio.org/redesign/images/bullet.png) no-repeat 0 8px;
+	color:#7d7d7d;
+	padding:0 0 6px 15px;
+}
+/*link*/
+.brand-builder .event-holder .link {
+	background:url(http://convention.bio.org/redesign/images/bg-link.png) no-repeat;
+	width:205px;
+	height:23px;
+	color:#fff;
+	float:left;
+	padding:0 0 0 11px;
+	font:bold 12px/20px Verdana, Geneva, sans-serif;
+}
+/*education-block*/
+.brand-builder .post .education-block {
+	height:1%;
+	padding:21px 0 0;
+	background-color:#fff;
+	margin:0px;	
+}
+.brand-builder .post .education-block:after {
+	display:block;
+	content:"";
+	clear:both;
+}
+.brand-builder .education-block img {
+	float:left;
+	background: #fff;
+	box-shadow: 0 0 7px #D7D8D8;
+	padding: 5px;
+	margin:0 23px 0 -3px;
+}
+/*education-holder*/
+.brand-builder .education-block .education-holder { 
+    overflow:hidden;
+	background-color:#fff;
+	margin:0px;	
+	clear:none;
+}
+.brand-builder .education-holder ul {
+	padding:0;
+	margin:0 0 17px 2px;
+	list-style:none;
+}
+.brand-builder .education-holder ul li {
+	background:url(http://convention.bio.org/redesign/images/bullet.png) no-repeat 0 8px;
+	color:#7d7d7d;
+	padding:0 0 6px 15px;
+}
+/*link*/
+.brand-builder .education-block .link {
+	background:url(http://convention.bio.org/redesign/images/bg-link.png) no-repeat;
+	width:205px;
+	height:23px;
+	color:#fff;
+	float:left;
+	padding:0 0 0 11px;
+	font:bold 12px/20px Verdana, Geneva, sans-serif;
+}
+/*graph-box*/
+.brand-builder .post .graph-box {
+	box-shadow: 0 0 7px #D7D8D8;
+	float:right;
+	background:#fff;
+	margin:4px -8px 0 40px;
+	width:225px;
+	clear:none;
+	padding:0px;
+	overflow:visible;
+}
+.brand-builder .graph-box img {
+	margin:0 auto;
+	display:block;
+	padding:0px;
+	box-shadow:none;
+}
+/*text-block*/
+.brand-builder .graph-box .text-block {
+	/*overflow:hidden;*/
+	overflow:visible;
+	background:#6b8cbe;
+	color:#fff;
+	line-height:16px;
+	padding:10px 5px 8px 15px;
+	margin:0px;
+}
+.brand-builder .graph-box .text-block .meeting-number {
+	font-size:17px;
+	line-height:17px;
+}
+/*prtner-block*/
+.brand-builder .entry-content .block-holder2 { 
+    overflow:hidden;
+	clear:none;
+	margin:0px;
+	padding:0px;
+	background:#fff;
+	}
+.brand-builder .block-holder2 p { margin:0 0 10px; }
+.brand-builder .block-holder2 .maximize {
+	color:#005699;
+	display:block;
+	margin:0 0 25px;
+}
+/*brand-holder*/
+.brand-builder .block-holder2 .brand-holder {
+	overflow:hidden;
+	padding:0;
+	margin:0 0 28px;
+	list-style:none;
+}
+.brand-builder .brand-holder li {
+	display:inline-block;
+	vertical-align:middle;
+	margin:0 -3px 0 0;
+	padding:2px 21px 0 3px;
+}
+*+html .brand-builder .brand-holder li { display:inline; }
+.brand-builder .brand-holder li a img,
+.oldie .brand-builder article .brand-holder img{ 
+    display:block;
+	border:none;
+	box-shadow:none;
+	}
+/*link*/
+.brand-builder .block-holder2 .link {
+	background:url(http://convention.bio.org/redesign/images/bg-link.png) no-repeat;
+	width:205px;
+	height:23px;
+	color:#fff;
+	float:left;
+	padding:0 0 0 11px;
+	font:bold 12px/20px Verdana, Geneva, sans-serif;
+}
+/*brand-block*/
+.brand-builder .post .brand-block {
+	height:1%;
+	padding:23px 0 0;
+	margin:0px;
+	background:#fff;
+}
+.brand-builder .post .brand-block:after {
+	display:block;
+	content:"";
+	clear:both;
+}
+.brand-builder .post .brand-block .img-holder {
+	float:left;
+	position:relative;
+	width:316px;
+	margin:0px;
+	padding:0px;
+	background:#fff;
+}
+.brand-builder .brand-block .img-holder img {
+	float:left;
+	background: #fff;
+	box-shadow: 0 0 7px #D7D8D8;
+	padding: 5px;
+}
+.brand-builder .brand-block .img-holder .img-brand {
+	position:absolute;
+	right:34px;
+	top:28px;
+}
+/*brand-box*/
+.brand-builder .brand-block .brand-box {
+	overflow:hidden;
+	padding:3px 0 0;
+	background:#fff;
+	margin:0px;
+	clear:none;
+}
+.brand-builder .brand-block .brand-box ul {
+	padding:0;
+	margin:0 0 18px;
+	list-style:none;
+}
+.brand-builder .brand-block .brand-box li {
+	background:url(http://convention.bio.org/redesign/images/bullet.png) no-repeat 0 8px;
+	color:#7d7d7d;
+	padding:0 0 6px 15px;
+}
+/*link*/
+.brand-builder .brand-block .brand-box .link {
+	background:url(http://convention.bio.org/redesign/images/bg-link.png) no-repeat;
+	width:205px;
+	height:23px;
+	color:#fff;
+	float:left;
+	padding:0 0 0 11px;
+	font:bold 12px/20px Verdana, Geneva, sans-serif;
+}
+/*advertise-container*/
+.brand-builder .post.advertise-container { padding:25px 15px 22px 0; }
+.brand-builder .advertise-container .number { top:25px; }
+/*advertise-box*/
+.brand-builder .advertise-container .advertise-box {
+	overflow:hidden;
+	padding:4px 20px 0 0;
+	margin:0px;
+	background:#fff;
+}
+.brand-builder .advertise-container .advertise-box img {
+	padding:0px;
+    box-shadow:none;
+}
+.oldie .brand-builder .advertise-container .advertise-box img {border:none;}
+.brand-builder .advertise-box .alignright { float:right;margin:0px; }
+/*advertise-options*/
+.brand-builder .advertise-box .advertise-options {
+	overflow:hidden;
+	padding:9px 0 0;
+	margin:0px;
+	background:#fff;
+	clear:none;
+}
+.brand-builder .advertise-options ul {
+	padding:0;
+	margin:0 0 18px;
+	list-style:none;
+}
+.brand-builder .advertise-options ul li {
+	background:url(http://convention.bio.org/redesign/images/bullet.png) no-repeat 0 8px;
+	color:#7d7d7d;
+	padding:0 0 6px 15px;
+}
+/*link*/
+.brand-builder .advertise-options .link {
+	background:url(http://convention.bio.org/redesign/images/bg-link.png) no-repeat;
+	width:205px;
+	height:23px;
+	color:#fff;
+	float:left;
+	padding:0 0 0 11px;
+	font:bold 12px/20px Verdana, Geneva, sans-serif;
+}
+/*brand-conteiner*/
+.brand-builder .post .brand-container {
+	height:1%;
+	padding:24px 0 0;
+	margin:0px;
+	background:#fff;
+}
+.brand-builder .post .brand-container:after {
+	display:block;
+	content:"";
+	clear:both;
+}
+.brand-builder .post .brand-container .img-holder {
+	float:left;
+	position:relative;
+	width:295px;
+	padding:6px 0 0;
+	background:#fff;
+	margin:0px;
+	overflow:visible;
+}
+.brand-builder .brand-container .img-holder img {
+	float:left;
+	background: #fff;
+	box-shadow: 0 0 7px #D7D8D8;
+	padding: 5px;
+}
+.brand-builder .brand-container .img-holder .img-brand {
+	position:absolute;
+	right:26px;
+	bottom:-49px;
+}
+/*brand-box*/
+.brand-builder .brand-container .brand-box { 
+    overflow:hidden;
+	background:#fff;
+	margin:0px;
+	padding:0px;
+	clear:none;
+	}
+.brand-builder .brand-container .brand-box ul {
+	padding:0;
+	margin:0 0 21px 3px;
+	list-style:none;
+}
+.brand-builder .brand-container .brand-box li {
+	background:url(http://convention.bio.org/redesign/images/bullet.png) no-repeat 0 8px;
+	color:#7d7d7d;
+	padding:0 0 6px 15px;
+}
+/*link*/
+.brand-builder .brand-container .brand-box .link {
+	background:url(http://convention.bio.org/redesign/images/bg-link.png) no-repeat;
+	width:205px;
+	height:23px;
+	color:#fff;
+	float:left;
+	padding:0 0 0 11px;
+	font:bold 12px/20px Verdana, Geneva, sans-serif;
+}
+/*section*/
+.brand-builder .section {
+	overflow:hidden;
+	padding:0 20px 30px 26px;
+	background:#fff;
+	margin:0px;
+}
+/*media-box*/
+.brand-builder .section .media-box {
+	float:left;
+	width:300px;
+	padding:16px 5px 34px 20px;
+	font:13px/16px Verdana, Geneva, sans-serif;
+	background:#6b8cbe;
+	margin:0px;
+	height: 255px;
+	width: 310px;
+}
+.brand-builder .media-box h3 {
+	margin:0 0 7px;
+	font:bold 13px/16px Verdana, Geneva, sans-serif;
+	color:#fff;
+	text-transform:capitalize;
+}
+.brand-builder .media-box ul {
+	padding:0 29px 0 2px;
+	margin:0;
+	list-style:none;
+	overflow:hidden;
+	color:#fff;
+}
+.brand-builder .media-box ul li {
+	background:url(http://convention.bio.org/redesign/images/bullet2.png) no-repeat 0 6px;
+	padding:0 0 6px 16px;
+}
+/*block-holder*/
+.brand-builder .section .block-holder {
+	float:right;
+	position:relative;
+	width:342px;
+	padding:22px 0 0 34px;
+	background:#e9ebeb;
+	margin:0px;
+	clear:none;
+	height: 255px;
+	margin-left: -1px;
+}
+.brand-builder blockquote {
+	margin: 0px;
+	border:none;
+	padding:0px;
+}
+.brand-builder .section .block-holder img {
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding:0px;
+	box-shadow:none;
+}
+.oldie .brand-builder .section .block-holder img {border:none;}
+/*blockquote*/
+.brand-builder .section .block-holder blockquote {
+	margin:0;
+	width:210px;
+	margin-left: -18px;
+	font-size: .85em;
+}
+.brand-builder .section .block-holder blockquote .quote {
+	margin:0;
+	background:none;
+	padding:0px;
+}
+.brand-builder .section .block-holder blockquote q {
+	color:#383939;
+	word-spacing:2px;
+	display:block;
+	margin:0 0 5px;
+}
+.brand-builder .section .block-holder blockquote cite { font:normal 11px/16px Verdana, Geneva, sans-serif; }
+.brand-builder blockquote cite .name {
+	display:block;
+	font:bold 13px/18px Verdana, Geneva, sans-serif;
+	color:#444;
+}
+.brand-builder blockquote cite .designation { display:block; }
+.brand-builder blockquote cite .company { display:block; }
+/*text-box*/
+.brand-builder .text-box {
+	overflow:hidden;
+	border-top:1px solid #f7f5f5;
+	font:14px/18px Verdana, Geneva, sans-serif;
+	color:#7d7d7d;
+	padding:16px 10px 36px 26px;
+}
+.brand-builder .text-box p {
+	margin:0;
+	word-spacing:-1px;
+}
+/*accordion*/
+.content .accordion3 {
+	padding:0 17px 20px 28px;
+	margin:0;
+	list-style:none;
+}
+.content .accordion3 li { overflow:hidden; }
+.content .accordion3 h2 {
+	margin:0 0 3px;
+	background:#daecf0;
+	font:bold 12px/30px Verdana, Geneva, sans-serif;
+	text-align:left;
+	padding:0 8px 0 12px;
+	text-transform:uppercase;
+}
+.content .accordion3 h2 a {
+	display:block;
+	color:#014483;
+}
+.content .accordion3 li.active a { background:url(http://convention.bio.org/redesign/images/btn-open.gif) no-repeat 100% 8px #daecf0; }
+.content .accordion3 li a { background:url(http://convention.bio.org/redesign/images/btn-close.gif) no-repeat 100% 8px #daecf0; }
+/*text-holder*/
+.content .accordion3 .text-holder {
+	overflow:hidden;
+	padding:0 0 2px;
+	display:none;
+}
+.content .accordion3 li.active .text-holder { display:block; }
+/*event-table*/
+.text-holder .event-table {
+	border-collapse:collapse;
+	font:13px/16px Arial, Helvetica, sans-serif;
+}
+.text-holder .event-table .header { background:#e6e5e5; }
+.event-table tr { background:#fff; }
+.event-table tr.even { background:#f6f3f3; }
+.event-table tr th {
+	padding:7px 0 0 13px;
+	text-align:left;
+	text-transform:uppercase;
+	color:#7d7d7d;
+	font:bold 11px/18px Arial, Helvetica, sans-serif;
+}
+.event-table tr td {
+	padding:13px 0 0 13px;
+	text-align:left;
+	vertical-align:top;
+}
+.event-table tr .title {
+	width:195px;
+	padding:1px 39px 3px 13px;
+}
+.event-table tr td.title {
+	padding:11px 39px 9px 13px;
+	color:#191919;
+	line-height:16px;
+}
+.event-table tr .ico-pdf {
+	width:20px;
+	padding:2px 9px 2px 13px;
+}
+.ico-pdf a img {
+	display:block;
+	margin:11px auto;
+}
+.event-table tr .description {
+	width:325px;
+	padding:2px 10px 2px 13px;
+	color:#7d7d7d;
+}
+.event-table tr td.description { padding:10px 10px 10px 13px; }
+.event-table tr .price {
+	width:60px;
+	color:#7d7d7d;
+	padding:2px 14px 2px 20px;
+}
+.event-table tr td.price { padding:10px 11px 0 23px; }
+.event-table tr .price .sold {
+	display:block;
+	text-transform:uppercase;
+	color:#e1701e;
+	font:bold 11px/18px Arial, Helvetica, sans-serif;
+}
+/*sidebar*/
+#main #sidebar {
+	float:left;
+	width:180px;
+	padding:3px 0 0;
+}
+#sidebar img {
+	display:block;
+	margin:0 0 22px;
+	-webkit-box-shadow:  0 0 7px #D7D8D8;
+	box-shadow:  0 0 7px #D7D8D8;
+}
+/*footer*/
+#footer {
+	background:url(http://convention.bio.org/redesign/images/bg-footer.png) repeat-x 0 100% #e9e9e9;
+	width:100%;
+}
+/*holder*/
+#footer .holder {
+	width:983px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#footer .holder img { display:block; }
+
+.container .accordion3 {
+	padding: 0 0px 20px 0px;
+	margin: 0;
+	list-style: none;
+}
+
+.container .accordion3 li {
+	overflow: hidden;
+}
+
+.container .accordion3 > li > h2 > a {
+	background: url(http://convention.bio.org/redesign/images/btn-close.png) no-repeat 100% 8px;
+	color: #fff;
+}
+
+.container .accordion3 > li > h2 > a.opener {
+	background: url(http://convention.bio.org/redesign/images/btn-open.png) no-repeat 100% 8px;
+	color: #fff;
+}
+
+.container .accordion3 h2 {
+	margin: 0 0 3px;
+	background: #6b8cbe;
+	font: bold 12px/30px Verdana, Geneva, sans-serif;
+	text-align: left;
+	padding: 0 8px 0 12px;
+	text-transform: uppercase;
+}
+
+ul.accordion3 li h2.ico-breakout {
+        background: url("http://convention.bio.org/redesign/images/ico-breakout.png") no-repeat scroll 0px 0px #6b8cbe;
+        padding-left: 30px;
+    }
+    
+    ul.accordion3 li h2.ico-breakout.ico-breakout-1 {
+        background-position: 0px -30px;
+    }
+    
+    ul.accordion3 li h2.ico-breakout.ico-breakout-2 {
+        background-position: 0px -60px;
+    }
+    
+    ul.accordion3 li h2.ico-breakout.ico-breakout-3 {
+        background-position: 0px -90px;
+    }
+    
+    ul.accordion3 li h2.ico-breakout.ico-breakout-4 {
+        background-position: 0px -120px;
+    }
+    ul.accordion3 li h2.ico-breakout.ico-breakout-5 {
+        background-position: 0px -150px;
+    }
+    
+    ul.accordion3 li h2.ico-breakout.ico-breakout-6 {
+        background-position: 0px -180px;
+    }
+    
+    ul.accordion3 li h2.ico-breakout.ico-breakout-7 {
+        background-position: 0px -210px;
+    }
+    
+    ul.accordion3 li h2.ico-breakout.ico-breakout-8 {
+        background-position: 0px -240px;
+    }
+    ul.accordion3 li h2.ico-breakout.ico-breakout-9 {
+        background-position: 0px -420px;
+    }
+    ul.accordion3 li h2.ico-breakout.ico-breakout-10 {
+        background-position: 0px -300px;
+    }
+    ul.accordion3 li h2.ico-breakout.ico-breakout-11 {
+        background-position: 0px -330px;
+    }
+    ul.accordion3 li h2.ico-breakout.ico-breakout-12 {
+        background-position: 0px -360px;
+    }
+    ul.accordion3 li h2.ico-breakout.ico-breakout-13 {
+        background-position: 0px -390px;
+    }
+	ul.accordion3 li h2.ico-breakout.ico-breakout-14 {
+        background-position: 0px -270px;
+    }
+    ul.accordion3 li h2.ico-breakout.ico-breakout-15 {
+        background-position: 0px -270px;
+    }
+
+.accordion3 .text-holder {
+	background-color: #ECECEC;
+	margin-top: 0px;
+	margin-bottom: 3px;
+	border: 1px solid #CECECE;
+}
+
+.accordion3 .text-holder p {
+	padding: 10px;
+	border-top: 1px solid #FCFCFC;
+	border-bottom: 1px solid #CFCFCF;
+	margin: 0px;
+}
+
+.accordion3 h2 {
+	border-bottom: 1px solid #52709C;
+	border-top: 1px solid #B0BCCE;
+}
+
+.container .accordion3 h2 a {
+	display: block;
+}
+
+.accordion3 .ico-pdf a img {
+	margin: 0px;
+	margin-top: 20px;
+}
+
+
+
+/*DASHBOARD - initially assumed to be Digital Daily*/
+
+.product-category {
+	display: inline-block;
+	margin-right: 24px;
+}
+
+div .product-category:last-child {
+	margin-right: 0px;
+}
+
+.product-category p {
+	font-size: .85em;
+	color: #6b8cbe;
+	padding-top: 10px;
+}
+
+.publish-date {
+	font-size: .9em !important;
+	color: #6e787b !important;
+}
+
+.subtitle {
+	color: #6b8cbe;
+}
+
+.btn.green-box {
+	width: 180px;
+	padding: 10px;
+}
+
+.dashboard h3 {
+	margin-top: 0px;
+}
+
+.big-banner .banner {
+	margin-bottom: -115px;
+}
+
+/*Toolkit*/
+
+.print-ad-samples div {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+}
+
+#toolkitModal img {
+	margin: 0 auto;
+	display: block;
+	max-width: 100%;
+	padding: 20px;
+}
+
+#toolkitModal .modal-header {
+	padding: 0px;
+}
+
+#toolkitModal .modal-header .close {
+	position: relative;
+	margin: 0px;
+	right: 10px;
+	top: 5px;
+}
+
+.print-ad-samples div:nth-child(3n+0) {
+	margin-right: 0px;
+}
+
+.print-ad-samples div:after {
+	content: "+";
+	padding: 5px 10px;
+	border-top-left-radius: 10px;
+	background-color: #b1cd31;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	bottom: 24px;
+	left: 171px;
+	pointer-events:none;
+}
+
+.print-ad-samples div img {
+width:200px !important;
+height: 250px !important;
+}
+.link-no-underline, .link-no-underline:hover {
+	text-decoration: none;
+	font-style: none;
+}
+
+.marketing-images > div {
+	display: inline-block;
+	width: 210px;
+	margin-right: 25px;
+	padding: 5px;
+	box-shadow: 0px 0px 7px 0px #CACACA;
+	height: 135px;
+}
+
+.marketing-images div:last-child {
+	margin-right: 0px;
+}
+
+.marketing-images div .btn {
+	position: relative;
+	bottom: 80px;
+	left: 20px;
+	background-color: rgba(106, 133, 174, 0.75);
+	color: #fff;
+	width: 160px;
+}
+
+.available {
+	display: inline-block;
+}
+
+.toggle {
+	padding: 0px;
+}
+
+.toggler {
+	list-style-type: none;
+}
+
+.toggler h4:before {
+	content: url('http://convention.bio.org/redesign/images/open.png');
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.toggler h4.active:before {
+	content: url('http://convention.bio.org/redesign/images/close.png');
+}
+
+.toggler div {
+	display: none;
+}
+
+.dark-logo-box {
+	width: 300px;
+	border: 1px solid #123456;	
+}
+
+.download-logos {
+	margin-top: 20px;
+}
+
+.download-logos > div {
+	display: inline-block;
+}
+
+.download-logos > div > .logo {
+	width: 210px;
+	margin-right: 25px;
+	height: 135px;
+	text-align: center;
+	line-height: 125px;
+	border: 1px solid #E6E6E6;
+	margin-bottom: 10px;
+}
+
+.download-logos > div p {
+	line-height: 1;
+}
+
+
+.download-logos > div img {
+	margin-top: 5px;
+}
+
+.download-logos div:last-child .logo {
+	margin-right: 0px;
+}
+
+.dark-back .logo {
+	background-color: #070707;
+}
+
+.light-back .logo {
+	background-color: #ffffff;
+}
+
+.dark-back .logo, .light-back .logo {
+	display: block;
+}
+
+.download-banner div:last-child {
+	padding: 0px;
+}
+
+.media-logos img {
+	max-width: 200px;
+	padding: 15px;
+}
+
+.media-logos {
+	margin-bottom: 75px;
+}
+
+/*Registration bottom*/
+
+.co-located-events {
+	width:100%;
+	border: 0px;
+	margin-bottom: 20px;
+}
+
+.co-located-events td {
+	width: 33% !important;
+	vertical-align: top;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.co-located-events td:last-child {
+	border: none;
+}
+
+.accordion2 {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.co-located-events h3 {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.accordion2 > li {
+	margin-bottom: -1px;
+	padding: 0px;
+	border-bottom:1px solid #ddd;
+}
+
+.accordion2 > li > span {
+	display: none;
+}
+
+.accordion2 > li > a {
+	/*width:350px;*/
+	display: block;
+	padding:10px 0px;
+}
+
+.accordion2 description {
+	padding:10px 0px;
+	display: block;
+}
+
+.accordion2 > li > a:after{
+	font-family: 'Glyphicons Halflings';
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	text-align: center;
+	color: #6b8cbe;
+	content: "\e081";
+	font-weight: 500;
+	font-size: 11px;
+	float: right;
+	position: relative;
+	bottom: 0px;
+}
+
+.accordion2 > .active > a:after{
+	font-family: 'Glyphicons Halflings';
+	width: 12px;
+	height: 12px;
+	line-height: 12px;
+	text-align: center;
+	content: "\e082";
+	font-weight: 500;
+	font-size: 11px;
+	float: right;
+	position: relative;
+	bottom: 0px;
+	color: #6b8cbe;
+}
+
+.eventsBox .accordion2 {
+	margin-top: 35px;
+}
+
+.BoxList2 {
+	float:left!important;
+	background:#ffffff!important;
+	padding-top:15px !important;
+	border-top:2px solid #f1f1f1;
+	padding-left:0px!important;
+	padding-right:0px!important;
+	margin-bottom:0!important;
+	width:724px;
+}
+.BoxList3 {
+	margin:0px;
+	padding:0px;
+	float:left;
+	background:#ffffff!important;
+	padding:0px !important;
+	margin:0px!important;
+}
+.BoxList3 ul {
+	margin:0px;
+	padding:0px;
+}
+.BoxList3 ul li {
+	list-style:none;
+	float:left;
+}
+.BoxList4 {
+	width:722px;
+	height:auto;
+	float:left;
+	background:#f0eded;
+	padding:10px !important;
+	margin:0px 0 10px 0!important;
+}
+.BoxList5 {
+	width:615px;
+	height:auto;
+	float:left!important;
+	background:#fff!important;
+	padding:0!important;
+	margin:0 0 0 24px!important;
+	clear:none!important;
+}
+.video_Box {
+	float:left!important;
+	padding-right: 10px;
+}
+
+.UpComingHeading3 {
+	width: 410px;
+	float: right;
+}
+
+.BoxList1 {
+	width:245px;
+	height: 95px;
+	float:right;
+	background:#f0eded;
+	padding:10px !important;
+	margin-left: 10px;
+	margin-right: -25px;
+	margin-top: -45px;
+}
+.BoxList1 ul {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+.BoxList1 ul li {
+	list-style:none;
+	float:left;
+	background:none;
+	width:50px;
+	margin:0px 12px 0 12px;
+}
+.BoxList1 ul li a {
+	list-style:none;
+	font-family:Arial;
+	font-size:11px;
+	text-decoration:none;
+}
+
+.attendees-logo {
+	background: url("http://convention.bio.org/redesign/images/Attendees.png") no-repeat scroll center center transparent !important;
+	float: left;
+	height: 37px;
+	line-height: 12px;
+	margin: 0;
+	padding: 0 !important;
+	text-align: left;
+	width: 50px;
+}
+.partnering-logo {
+	background: url("http://convention.bio.org/redesign/images/Partnering.png") no-repeat scroll center center transparent !important;
+	float: left;
+	height: 39px;
+	line-height: 12px;
+	margin: 0;
+	padding: 0 !important;
+	text-align: left;
+	width: 50px;
+}
+.exhibitor-logo {
+	background: url("http://convention.bio.org/redesign/images/Exhibitors2.png") no-repeat scroll center top transparent !important;
+	float: left;
+	height: 40px;
+	line-height: 12px;
+	margin: 0;
+	padding: 0 !important;
+	text-align: left;
+	width: 42px;
+}
+
+ul.two-col {
+    list-style: none;
+    width: 100%;
+    padding: 8px 0 0;
+    margin: 0 0 1.5em;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.oldie ul.two-col > li { clear: none; }
+ul.one-col > li {
+    width: 100%;
+    float: left;
+}
+ul.two-col > li {
+	width: 50%;
+	float: left;
+	clear: left;
+	display: block;
+	padding: 10px;
+}
+ul.two-col > li:nth-child(2n) {
+    float: right;
+    clear: right;
+}
+ul.one-col li h3,
+ul.two-col li h3 {
+    background: #6b8cbe;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 10px 8px 12px;
+    margin: 0 0 16px;
+}
+ul.one-col li h3 a,
+ul.two-col li h3 a { color: #014483; }
+ul.one-col li h3 a.more,
+ul.one-col ul li a.more,
+ul.two-col li h3 a.more,
+ul.two-col ul li a.more {
+    font-size: 11px;
+    font-weight: normal;
+    color: #fff;
+    text-transform: none;
+    padding: 3px 13px 0 0;
+    float: right;
+}
+
+ul.two-col li h3.icon {
+    background: #6b8cbe url(http://convention.bio.org/redesign/images/ico-connect.png) no-repeat -192px -7px;
+    padding-left: 62px;
+    color: #fff;
+}
+
+ul.two-col li h3.icon a {
+    color: #fff;
+}
+
+.myBIO-callout {
+background-color: #F1F1F1;
+display: block;
+padding: 15px;
+border: 1px solid #D1D1D1;
+margin:0 0px 15px 0px;
+border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+-webkit-box-shadow: 0 0 2px 1px rgba(38,38,38,0.15);
+box-shadow: 0 0 2px 1px rgba(38,38,38,0.15);
+}
+
+.myBIO-callout .btn {
+	background-color: #6b8cbe ;
+	border: 1px solid #D1D1D1;
+	color: #fff;
+}
+.myBIO-callout h3{
+	margin-top: 0px;
+}
+ul.two-col li h3.icon.ico-1 { background-position: -192px -7px; }
+ul.two-col li h3.icon.ico-2 { background-position: -143px -55px; }
+ul.two-col li h3.icon.ico-3 { background-position: -94px -101px; }
+ul.two-col li h3.icon.ico-4 { background-position: -45px -149px; }
+ul.two-col li h3.icon.ico-5 { background-position: 4px -196px; }
+ul.one-col ul,
+ul.two-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5em;
+    display: block;
+}
+ul.one-col ul { padding: 0 3px; }
+ul.one-col ul > li {
+    width: 352px;
+    border-bottom: 1px solid #f1efef;
+    margin: 0 0 16px;
+    float: left;
+    clear: left;
+}
+ul.two-col ul > li {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+}
+ul.two-col > li:nth-child(2n) {
+    float: right;
+    clear: right;
+}
+ul.one-col p,
+ul.two-col p {
+    margin-top: .4em;
+}
+ul.two-col img {
+    border: 1px solid #e5e5e6;
+    margin: 0 16px 35px 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+}
+ul.two-col a img {
+    border: none;
+    -moz-box-shadow: 0 0 7px #d7d8d8;
+    -webkit-box-shadow: 0 0 7px #d7d8d8;
+    box-shadow: 0 0 7px #d7d8d8;
+}
+ul.two-col img.no-border { border:none; padding:0 5px; }
+ul.one-col ul li .col,
+ul.two-col ul li .col {
+    width: 220px;
+    padding: 0 8px 0 0;
+    float: right;
+}
+ul.one-col ul li .col { width: 215px; }
+ul.two-col .speakers {
+    padding: 0 3px;
+    overflow: hidden;
+}
+ul.two-col .speakers li {
+    width: 33%;
+    text-align: center;
+    margin-bottom: 24px;
+    float: left;
+    overflow: visible;
+}
+ul.two-col .speakers li img {
+    margin: 0 auto;
+}
+ul.two-col .speakers li strong {
+    font-size: 12px;
+    margin: 2px 0;
+}
+
+#ctl00_MainContent_NavigationControls {
+	margin: 25px auto;
+}
+
+#ctl00_MainContent_NavigationControls a {
+display: inline-block;
+width: 30px;
+padding: 5px;
+border: 1px solid #E5E5E5;
+margin-left: -5px;
+}
+
+#ctl00_MainContent_NavigationControls a:hover {
+	text-decoration: none;
+	font-style: none;
+	background-color: #E5E5E5;
+}
+
+#ctl00_MainContent_NavigationControls a:first-child {
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+#ctl00_MainContent_NavigationControls a:last-child {
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.ErrorHeading {
+	font-size:45px;
+	font-weight:bold;
+	width:722px;
+	float:left;
+	margin:0px 0 12px 0!important;
+	line-height:46px!important;
+}
+.ErrorHeading2 {
+	font-size:22px!important;
+	font-weight:bold!important;
+	width:530px!important;
+	float:left!important;
+	margin:0 0 0 0!important;
+	line-height: 27px;
+}
+.ErrorHeadBox {
+	border-bottom:4px solid #f7f5f5;
+	border-top:4px solid #f7f5f5;
+	float:left;
+	padding:10px 0 10px 0!important;
+	width:722px;
+	background:#ffffff!important;
+	margin-bottom:15px!important;
+}
+.ErrorHeading3 {
+	font-size:16px!important;
+	width:670px!important;
+	float:left!important;
+	margin:0px!important;
+	line-height: 27px;
+	padding:0px!important;
+}
+.PhoneNumColor {
+	font-weight:bold;
+}
+.MailColor {
+	font-weight:bold;
+}
+.ExploreLinkBox {
+	background:#f2f2f2;
+	border-bottom:3px solid #e0e0e0;
+	padding:15px 0 30px 15px!important;
+	float:left;
+	margin:25px 0 10px 0!important;
+	width:722px;
+}
+.ExploreLinkBox ul {
+	margin:0px;
+	padding:0px;
+	float:left;
+}
+.ExploreLinkBox ul li {
+	list-style:none;
+	margin:5px 16px 0 0;
+	float:left;
+}
+.ExploreLinkBox ul li a {
+	font-size:17px;
+	color:#6b8cbe;
+	text-decoration:none;
+	padding:2px 0 2px 25px;
+}
+.ExploreLinkBox ul li a:hover {
+}
+.Registration_Logo {
+	background:url(http://convention.bio.org/redesign/images/Registration.png) no-repeat left;
+}
+.Partnering_Logo {
+	background:url(http://convention.bio.org/redesign/images/Partnering_img.png) no-repeat left;
+}
+.Exhibiting_Logo {
+	background:url(http://convention.bio.org/redesign/images/Exhibiting.png) no-repeat left;
+}
+.Program_Logo {
+	background:url(http://convention.bio.org/redesign/images/Program.png) no-repeat left;
+}
+.GirlImage img {
+	background-color:none !important;
+	box-shadow:none !important;
+	background:none !important;
+	border:none!important;
+}
+.GirlImage {
+	width:243px;
+	height:320px;
+	float:right;
+	position:absolute;
+	background-color:none !important;
+	bbox-shadow:none !important;
+	right:0px;
+	top: 28px;
+	background: url(http://convention.bio.org/redesign/images/Girl_img.png) no-repeat scroll 0 0 transparent !important;
+}
+#container .box.errorcontainer {
+	position: relative;
+}
+
+#toolkitModal .modal-dialog {
+	width: 1000px;
+}
+
+#aspnetForm {
+    width: 100%;
+}
+#aspnetForm input,
+#aspnetForm textarea,
+#aspnetForm select {
+    background: #f8f7f7;
+    border: 1px solid #dfdede;
+    font: normal 12px/13px sans-serif;
+    color: #7d7d7d;
+    padding: 12px 14px;
+    margin: 0 8px 16px 0;
+}
+#aspnetForm textarea { line-height: 18px; }
+#aspnetForm .submit {
+    margin-top: 0px;
+    display: block;
+    padding: 0px;
+}
+#aspnetForm .submit input {
+	float: left;
+	background-color: #6b8cbe;
+	padding: 15px 40px;
+	border-radius: 0px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+#aspnetForm .half {
+    width: 328px;
+}
+#aspnetForm .full {
+    width: 667px;
+}
+#aspnetForm select.full { width: 667px; }
+#aspnetForm form .last {
+    margin-right: 0;
+}
+
+/* commented for page builder */ 
+/* #aspnetForm span {
+	position: relative;
+} */
+
+/*Zerista Current*/
+.box.accordion {
+    padding: 0px;
+    margin: 0px;
+	max-width:100%;
+}
+.box.accordion ul 
+{
+    font-size:11px;
+    list-style: none;
+	width:100%;
+    padding: 0;
+    margin: 0 0 0 -16px;
+    display: block;
+    padding: 15px 0px;
+    margin: 0px;
+}
+.box.accordion ul li:last-child { margin-bottom: 0px; }
+.box.accordion ul li.last { margin-bottom: 0px; }
+.box.accordion ul li {
+    background: #f1f1f1;
+    margin: 0 0 2px;
+    display: block;
+}
+/* Modified on 12/26/2014 for responsive style issues */
+/*.box.accordion ul li.open > a { background-position: -57px center; }*/
+.box.accordion ul li.open > a { background-position: -13px center; }
+.box.accordion ul li > a {
+    background: url(http://convention.bio.org/redesign/images/btn-expand-aside.png) no-repeat 175px center;
+    font-size: 11px;
+    color: #363636;
+    padding: 8px 26px 8px 6px;
+    display: block;
+}
+/* Modified on 12/26/2014 for responsive style issues */
+.box.accordion ul li.open { display: block; background: #f1f1f1 !important; }
+.box.accordion ul li > span {
+    display: none;
+}
+
+.box.accordion ul li .active {
+    display: block !important;
+    background-color: #fff;
+}
+
+.box.accordion ul li span {
+padding: 8px 16px;
+}
+
+.box.accordion ul li span * {
+display: block;
+}
+
+.speakers.one-col ul > li {
+	clear: none;
+	width: 50%;
+	display: block;
+}
+
+.speakers.one-col {
+	list-style-type: none;
+	padding: 0px;
+}
+
+
+/*ZERISTA ARCHIVES*/
+
+.container ul.sort {
+    list-style: none;
+    color: #014483;
+    padding: 0;
+    margin: 20px 0 20px;
+    overflow: hidden;
+}
+.container ul.sort li:last-child { margin-right: 0; }
+.container ul.sort li.last { margin-right: 0; }
+.container ul.sort li {
+    text-transform: uppercase;
+    margin: 0 4px 4px 0;
+    float: left;
+}
+.container ul.sort .title {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px 0 0;
+}
+.container ul.sort li a {
+	border: 1px #014483 solid;
+    font-weight: bold;
+    color: #014483;
+    padding: 2px 5px;
+    display: inline-block;
+}
+
+
+.archive_speakers p {
+margin-top:16px;
+}
+
+.archive_companies div.imageCol {
+float:left;
+margin:0 25px 0 0;
+width: 100%;
+padding: 15px 0px;
+}
+
+div.imageCol img {
+	display: inline-block;
+}
+
+div.imageCol p {
+	display: inline-block;
+	font-weight:bold;
+	padding: 0px 20px;
+}
+.archive_companies div.imageCol img {
+width:100px;
+}
+
+.archive_sessions p {
+margin-top:16px;
+}
+
+p.archiveViewMore {
+margin-top:30px;
+font-weight:bold;
+}
+
+
+/* start of Digital Daily code */
+
+#digibox {
+	position: relative;
+}
+.dd-banner {
+	/*background: #fff url(/images/banner-biotechnow.png) no-repeat 0 0 !important;*/
+	background-size: 100% !important;
+	width: 100%;
+	height: 202px;
+	position: relative;
+	left: -9px;
+}
+
+.dd-banner span {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+}
+
+.dd-sponsor img {
+	position: relative;
+	top: 40px;
+	left: 530px;
+	border:none !important;
+}
+
+#digibox h1 {
+	text-transform: uppercase;
+	background-color: #6b8cbe;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.18em;
+	padding-left: 12px;
+	position: relative;
+}
+#container .content article#digibox div {
+    clear: none;
+    background-color: #fff;
+    overflow: visible;
+    padding: 0;
+}
+#container .content article#digibox img {
+	background: none;
+	box-shadow: none;
+}
+.dd-articlefeed {
+	float: right;
+	margin-left: 35px;
+}
+.dd-videofeed {
+	float: left;
+
+}
+.dd-articlefeed h2, .dd-videofeed h2{
+	border: 1px solid #e5e5e5;
+	border-left: 0px;
+	border-right: 0px;
+	line-height: 47px;
+	margin-bottom: 25px;
+}
+#digibox h2 {
+	text-transform: uppercase;
+	color: #00386c;
+	font-size: 16px;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+h2 span {
+	color: #b1cc35;
+	font-size: 20px;
+
+}
+
+.dd-articleitem {
+
+}
+
+.dd-articleitem p {
+	color: #3d3d3d;
+	font-size: .85em;
+	
+}
+.dd-articleitem p.small-margin{
+	margin-bottom: 10px;
+	font-style: normal;
+}
+.small-header a {
+	color: #000;
+	text-transform: none;
+	font-size: 1.15em;
+	font-weight: normal;
+}
+
+.small-header a:hover {
+	color: #3d3d3d;
+}
+
+.vidPageNav, .artPageNav {
+	float: right;
+	padding: 20px 0px;
+	width: 100%;
+	text-align: right;
+	border-top: 1px solid #e5e5e5;
+}
+
+.vidPageNav a, .artPageNav a {
+	padding: 1px 5px;
+	margin: 0 3px;
+	border: 1px solid #e5e5e5;
+}
+
+.vidPageNav a:hover, .vidPageNav a:active, .artPageNav a:hover, .artPageNav a:active, a.ddselected {
+	background-color: #ececec;
+}
+
+.ddhide {
+	display: none;
+}
+
+.ddshow {
+	display: block;
+}
+
+.dd-videoitem {
+	position: relative;
+	padding:0px;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+.dd-videoitem a{
+	display: block;
+	position: relative;
+}
+.dd-videoitem img {
+	width: 226px;
+	height: 144px;
+}
+
+.dd-videodesc {
+	color: #3d3d3d;
+	font-style: italic;
+	font-size: .75em;
+	width: 226px;
+}
+
+.dd-playbutton {
+	background:url(http://convention.bio.org/redesign/images/button-play.png) #B0CC56 no-repeat !important;
+	/*height:63px;
+	width:73px;*/
+        height:50px;
+	width:59px;
+	position:absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 2;
+	border-radius: 10px 0 0 0;
+	-moz-border-radius: 10px 0 0 0;
+	-webkit-border-radius: 10px 0 0 0;
+}
+
+.dd-landingpage-cat {
+	width: 100%;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 6px;
+}
+
+.dd-landingpage-cat h2 {
+	display: inline;
+}
+a.dd-viewall {
+	font-size: 13px;
+	float: right;
+}
+
+a.dd-viewall:after {
+	content: " \25b6";
+	font-size: .6em;
+}
+
+.dd-landingpage-item {
+	border-top: 1px solid #e5e5e5;
+	padding: 15px 0 !important;
+	margin-top: 10px !important;
+	overflow: auto;
+	margin-bottom: 13px !important;
+}
+
+.dd-landingpage-item h3 {
+	color: #000;
+	text-transform: none;
+	font-weight: normal;
+	font-size: 1.2em;
+	margin-top: 0px;
+}
+
+.dd-landingpage-item p {
+	color: #3d3d3d;
+	font-size: .85em;
+}
+
+.dd-landingpage-video {
+	float: left;
+	border-right: 2px solid #e5e5e5;
+	padding-right: 15px !important;
+	margin-right: 15px !important;
+	height: 228px;
+}
+
+/*additional tweaks for Digital Daily */
+
+.diginav {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0px 1px 1px #EEEEEE;
+    margin: 0 0 18px;
+    overflow: hidden;
+}
+.diginav .active {
+	font-weight: bold;
+}
+.diginav .active a{
+	font-size: 14px;
+}
+.diginav ul {
+	margin:0;
+	padding:0;
+	font-size: 11px;
+	list-style: none outside none;
+}
+.diginav ul li {margin:0;display:block;background: none repeat scroll 0 0 #fff;border-bottom: 1px solid #DDDDE3;}
+.diginav ul li a {padding: 8px 32px 8px 12px;display:block;text-decoration:none;text-transform: uppercase;color: #014483;font-size:12px;}
+
+p.small-margin {margin:2px 0 -20px 0;padding:0;font-style:italic;}
+p.small-readmore {margin:0px 0 8px 0;padding:0;font-style:italic;}
+h3.small-header {
+	margin-bottom:15px;
+	margin-top:10px;
+	font-size: 1.4em;
+}
+.small-header a {color:#005699; font-size:20px;}
+
+#digibox h2.featured-header {margin:6px 0 6px 0px;font-style:italic;font-weight:bold;color:#3d3d3d;text-transform:none;}
+
+
+/* 4/1/14 */
+
+.biotech-feed {
+	width: 600px;
+}
+
+.biotech-feed .article-info {
+	font-style: italic;
+	font-weight: 700;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #E2E2E2;
+	color: #696969;
+}
+
+.biotech-feed h2 {
+	font-weight: 700;
+	margin-bottom: 2px;
+	margin-top: 25px;
+}
+
+.biotech-feed .article-description br {
+	display: none;
+}
+
+.biotech-feed a {
+	font-weight: 700;
+	display: block;
+}
+
+table.standard-table td {
+width: auto !important;
+min-width:170px;
+padding: 5px 15px 5px 5px;
+}
+
+
+/*Resources page accordion*/
+.container .resources ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0px;
+    display: block;
+    overflow:hidden;
+}
+.container .resources ul.accordion > li:last-child,
+.container .resources ul.accordion > li.last { margin-bottom: 0px; }
+.container .resources ul.accordion > li {
+    background-color: #eeeded;
+    border-top: 1px solid #dcdcdc;
+    margin: 0 0 2px;
+    display: block;
+}
+.container .resources ul.accordion > li.open > a { background-position: right 10px top -61px; background-color: #eeeded; }
+.container .resources ul.accordion > li > a {
+    background-image: url(http://convention.bio.org/redesign/images/btn-expand-resources.png);
+    background-repeat: no-repeat;
+    background-position:  right 10px top 9px;
+    background-color: #eeeded;
+    border-top: 1px solid #fff;
+    font-size: 16px;
+    font-weight:bold;
+    color: #4a5c62;
+    padding: 10px 13px 10px 13px;
+    display: block;
+    text-decoration: none;
+}
+
+.container .resources ul.accordion > li.open > ul,
+.container .resources ul.accordion li.open ul li { 
+	vertical-align: top;
+}
+
+.container .resources ul.accordion li.res-article {
+	width: 282px;
+    margin:15px 10px;
+    position:relative;
+    display: inline-block;
+}
+.ie7 .container .resources ul.accordion li.res-article {padding-bottom:10px;}
+/*.container .resources ul.accordion li.res-article:nth-child(3n+1),*/ 
+.container .resources ul.accordion li ul h3{
+    clear:both;
+    background-color: #6b8cbe;
+    padding: 5px;
+}
+
+.container .resources ul.accordion li ul h3 a{
+    color: #fff !important;
+    text-decoration: none;
+    font-size: .9em;
+}
+.container .resources ul.accordion > li > ul {
+    background: #fff;
+    padding: 8px 16px;
+    overflow:hidden;
+}
+.container .content article ul.accordion img {
+    background: none;
+    box-shadow: 0 0 0;
+    padding: 0;
+    margin:0 10px 10px 0;
+    float:left;
+    border:none;
+}
+.ca-container.ca-resources {
+	margin-bottom: 10px;
+}
+.ca-container .ca-item-main	a{
+	display: block;
+}
+.ca-container.ca-resources .ca-item-main .play {
+	background-color: #B0CC56 ;
+	position: absolute;
+	font-size: 5em;
+	right: 0px;
+	bottom: 5px;
+	color: #fff;
+	border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	padding: 15px;
+	margin:0;
+}
+.partnering.ca-container.ca-resources .ca-item-main .play{
+	bottom: 60px;
+	margin-bottom: 8px;
+}
+.ca-container.ca-resources .ca-item-main .play span{
+	font-size: 25px;
+}
+.ca-container.ca-resources .ca-nav {
+	margin-top: -30px;
+}
+.ca-container .ca-wrapper{
+	height: 270px;
+}
+.ca-container.ca-resources .ca-wrapper {
+	padding-top: 10px;
+	height: 210px;
+}
+ .ca-container{
+ 	height: auto !important;
+ 	color: #4a5c62;
+ }
+ .ca-container p{
+ 	color: #4a5c62;
+ }
+.for-schedule .ca-container{
+	padding: 0 10px !important;
+}
+.resources .res-article p {
+	margin-top: 10px;
+	color: #4a5c62;
+	font-size: 13px;
+}
+
+.resources .res-article em {
+	display: block;
+	font-size: .9em;
+	padding-top: 5px;
+}
+
+.resources .resources_block * {
+	display: block;
+}
+
+.resources .resources_block {
+	display: inline-block;
+	width: 313px;
+	padding: 15px 20px;
+	vertical-align: top;
+}
+
+.resources .resources_block h1 {
+	margin-top: 0px;
+}
+
+.resources .res-sub-section {
+	display: block;
+}
+
+.resources {
+	clear: both;
+}
+
+.row {
+ margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* Styles added for Email Popup box*/
+
+.email-popup {
+margin: 20px;
+background-color: #f4f3f3;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0px 0px 7px #999999;
+}
+.email-popup table {
+    width:100%;
+}
+.email-popup tr td label {
+    margin-top: 10px;
+    width: 20%;
+    font-family: 'Titillium Web', sans-serif;
+    color: #3F3F3F;
+    font-weight: 600;
+}
+.email-popup input {
+width: 75%;
+height: 30px;
+border: 1px solid #D9D7D7;
+}
+.email-popup .button {
+text-align: right;
+margin: 20px;
+display: inline-block;
+margin-left: 40%;
+margin-right: 0px;
+}
+
+#Lightbox {background-color: #000;display: block;height: 700px;opacity: 0.23;position: absolute;width: 66%;z-index: 78;}
+
+#protinycontent {margin: 8% 10% 5% 47%;position: fixed;z-index: 5000;font-size: 20px;}
+
+div.popup-text-content {
+    font-family: 'Titillium Web', sans-serif;
+    color: #3F3F3F;
+    font-weight: 600;
+}
+
+/* Styles added for Email Popup box*/
+
+.home-accordion .collapse{
+	display: block ;
+}
+.push-menu{
+	display: none;
+}
+/**Push Menu Css**/
+.multilevelpushmenu_wrapper {
+	/*position: absolute;*/
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.multilevelpushmenu_wrapper .levelHolderClass {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	background: #034172;
+	width: auto;
+	min-height: 100%;
+	zoom: 1;
+}
+
+.multilevelpushmenu_wrapper .ltr {
+	margin-left: -100%;
+	left: 0;
+	-moz-box-shadow: 5px 0 5px -5px #1f4164;
+	-webkit-box-shadow: 5px 0 5px -5px #1f4164;
+	box-shadow: 5px 0 5px -5px #1f4164;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#1f4164,direction=90,strength=2);
+	border-right: 1px solid rgb(4, 57, 82);
+}
+
+.multilevelpushmenu_wrapper .rtl {
+	margin-right: -100%;
+	right: 0;
+	-moz-box-shadow: 5px 0 5px 5px #1f4164;
+	-webkit-box-shadow: 5px 0 5px 5px #1f4164;
+	box-shadow: 5px 0 5px 5px #1f4164;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#1f4164,direction=270,strength=2);
+}
+
+.multilevelpushmenu_wrapper .multilevelpushmenu_inactive {
+	background: #034172;
+}
+
+.multilevelpushmenu_wrapper h2 {
+	font-size: 1.5em;
+	line-height: 1em;
+	font-weight: bold;
+	color: #1f4164;
+	padding: 0 .4em 0 .4em;
+}
+
+.multilevelpushmenu_wrapper ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.multilevelpushmenu_wrapper li {
+	padding:0 10px;
+}
+
+.multilevelpushmenu_wrapper a {
+	width: 100%;
+	display: block;
+	outline: none;
+	overflow: hidden;
+	line-height: 1em;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	border-bottom: 1px solid #065b9e;
+}
+.multilevelpushmenu_wrapper a.dropdown-toggle:after{
+	font-family: 'Glyphicons Halflings';
+	float: right;
+	font-size: 12px;
+	color: #6b8cbe;
+	content:"\e131";
+}
+.multilevelpushmenu_wrapper a:hover {
+	color: #ffe;
+}
+
+.multilevelpushmenu_wrapper .backItemClass {
+	display: block;
+}
+.multilevelpushmenu_wrapper .backItemClass a:before{
+	font-family: 'Glyphicons Halflings';
+	font-size: 12px;
+	color: #6b8cbe;
+	content:"\e132";
+}
+.ltr .dropdown{
+	position: initial;
+}
+.multilevelpushmenu_wrapper .floatRight {
+	float: right;
+}
+
+.multilevelpushmenu_wrapper .floatLeft {
+	float: left;
+}
+
+.multilevelpushmenu_wrapper .cursorPointer {
+	cursor: pointer;
+}
+
+.multilevelpushmenu_wrapper .iconSpacing_ltr {
+	padding: 0 .4em 0 0;
+}
+
+.multilevelpushmenu_wrapper .iconSpacing_rtl {
+	padding: 0 0 0 .4em;
+}
+#pushobj {
+    margin-left: 40px;
+}
+/**Push Menu Css Ends**/
+
+#quick-link ul li a{
+	border-bottom: 1px solid #065b9e;
+}
+/** Desktop ----------- **/
+/**Internal Page**/
+.inner-page .ca-container{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.inner-page .ca-item{
+	width: 33.3%;
+}
+.inner-page .dd-videofeed-mob .ca-item{
+	width: 100%;
+}
+.inner-page .dd-videofeed-mob h2{
+	display: none;
+}
+.dd-videofeed-mob .ca-item{
+	position: absolute;
+}
+.inner-page .ca-item-main{
+	padding: 0px;
+	left: 0px;
+}
+.inner-page .portfolio-item{
+	width: 100%;
+	border:1px solid #dcdcdc;
+}
+.inner-page .container .resources ul.accordion > li > ul{
+	margin: 0 -20px;
+	padding: 10px 0;
+}
+.inner-page .container .resources ul.accordion li.res-article{
+	margin: 0px 20px 30px 20px;
+}
+.inner-page .container .resources ul.accordion li.res-article a img{
+	border:1px solid #dcdcdc;
+}
+.inner-page .container .resources ul.accordion li.res-wp ul{
+	margin: 0px;
+}
+
+.ca-nav span{
+	font-size:small;
+}
+.row.margin{
+		margin: 0px -15px !important;
+	}
+.ca-item.fixed-width{
+	width: 100%;
+}
+/* Style book house page */
+div.book-house {
+    width: 700px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 520px !important;
+    margin: 0px 0px 0px 35px;
+}
+div.book-house > #book-iframe {
+    width: 625px !important;
+    height :500px;
+}
+/* style book house page */
+
+/**Internal Page Ends**/
+
+@media only screen and (min-width : 1024px) {
+
+}
+/** Tablet ----------- **/
+@media only screen and (max-width : 1024px) {
+	body{
+		min-width: 100%;
+	}
+	.navbar-default .navbar-nav > li > a{
+		font-size: 12px;
+	}
+	.inner_ad{
+		width: 100%;
+	}
+	.container{
+		width: 100%;
+	}
+	.header-text{
+		padding-right: 0;
+		height: 100px;
+		right: 0;
+		left: 0;
+		top: 0px;
+	}
+	.inner_ad iframe{
+		width: 48%;
+	}
+	.inner_ad iframe:last-child {
+		float: right;
+	}
+	.dd-banner{
+		width: 100%;
+		left: 0px;
+		background-size: 100% !important;
+	}
+    .registration-tab .tab-title {
+        margin: auto auto 0px;
+    }
+    .ca-container.ca-resources .ca-item-main .play {
+        margin: 0px 0px 5px 0px;
+        bottom:0px;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1300px){
+	.carousel-caption{
+		margin-top: 30px !important;
+	}
+	.carousel-caption p{
+		/**font-size: 1.5em;**/
+	}
+}
+@media screen and (min-width: 901px) and (max-width: 1200px){
+	.carousel-caption{
+		margin-top: 10px !important;
+	}
+	.carousel-caption p{
+		font-size: 1.5em;
+	}
+	.inner_ad{
+		width: 100%;
+	}
+	.inner_ad iframe{
+		width: 50%;
+		float: left;
+	}
+    .pavilion ul li {
+        width: 25%;
+    }
+    /* Style book house page */
+div.book-house {
+    width: 600px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 450px !important;
+    margin: 0px 0px 0px 30px;
+}
+div.book-house > #book-iframe {
+    width: 500px !important;
+    height :500px;
+}
+/* style book house page */
+}
+
+@media screen and (min-width: 901px) and (max-width: 990px) {
+    .navbar-default .navbar-nav > li > a{
+		font-size: 11px;
+	}
+    .navbar-default .navbar-nav > li > a{
+		padding: 13px 5px !important;
+	}
+    .navbar-collapse {
+        padding-right: 0px !important;
+    }
+    .container {
+        padding-right: 0px !important; 
+        width:830px !important;
+        max-width:830px !important;
+    }
+     .header-text a {
+        padding: 2px;
+    }
+    .sub-footer p {
+        text-align: center;
+    }
+    .footer-menu {
+        float: none;
+    }
+    .footer-link ul {
+        margin-left: 5px;
+    }
+    .footer-link li {
+        padding:10px;
+    }
+    .header-text h2 {
+        padding: 15px 10px 10px;
+    }
+    #mini-logo {
+        margin: 0px 50px 0px 0px;
+    }
+    .mini-logo {
+        margin-top: 0px !important;
+        padding-right:30px;
+    }
+   .carousel-caption h1 {
+        font-size: 2.5em !important;
+    }
+    .carousel-caption p .btn-primary {
+        margin-top:10px;
+        padding:12px 25px;
+    }
+    .carousel-caption {
+        left: 12% !important;
+    }
+    .carousel-indicators {
+        width: 10% !important;
+        left: 45% !important;
+    }
+    .slider-switch {
+        height: 45px;
+    }
+     .slider-switch div a {
+            font-size: 16px;
+     }
+     .inner_ad iframe {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 991px) {
+    /*digital daily*/
+    div.container .inner-page .digital-daily-left {
+        float: left !important;
+        padding-right: 10px;
+    }
+
+    div.container .inner-page .digital-daily-right {
+        float: left !important;
+        width: 620px !important;
+    }
+    /*digital daily*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+	.carousel-caption{
+		margin-top: 5px !important;
+	}
+	.carousel-caption h1{
+		font-size: 2.5em;
+	}
+	.carousel-caption p{
+		font-size: 1.2em;
+	}
+    .pavilion ul li {
+        width: 25%;
+    }
+        /* Style book house page */
+div.book-house {
+    width: 575px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 425px !important;
+    margin: 0px 0px 0px 25px;
+}
+div.book-house > #book-iframe {
+    width: 475px !important;
+    height :500px;
+}
+/* style book house page */
+
+	.navbar-default .navbar-nav > li > a{
+		font-size: 10px;
+	}
+    .navbar-default .navbar-nav > li > a{
+		padding: 13px 4px !important;
+	}
+    .navbar-collapse {
+        padding-right: 0px !important;
+    }
+    .container {
+        padding-right: 0px !important; 
+        padding-left:35px;
+        width:765px !important;
+        max-width:765px !important;
+    }
+    .header-text a {
+        padding: 2px;
+    }
+    .sub-footer p {
+        text-align: center;
+    }
+    .footer-menu {
+        float: none;
+    }
+    .footer-link ul {
+        margin-left: 5px;
+    }
+    .footer-link li {
+        padding:8px;
+    }
+    .header-text h2 {
+        padding: 15px 10px 10px;
+    }
+    .mini-logo {
+        margin-top: 0px !important;
+        padding-right:30px;
+    }
+    .carousel-caption h1 {
+        font-size: 2.0em !important;
+    }
+    .carousel-caption p .btn-primary {
+        margin-top:5px;
+        padding:10px 20px;
+    }
+    .carousel-caption {
+        left: 10% !important;
+    }
+    .carousel-indicators {
+        width: 10% !important;
+        left: 45% !important;
+    }
+    .slider-switch {
+        height: 45px;
+    }
+     .slider-switch div a {
+            font-size: 15px;
+     }
+    .inner_ad iframe {
+        width: 100%;
+    }
+
+     /*digital daily*/
+    div.container .inner-page .digital-daily-left {
+        float: left !important;
+        padding-right:0px;
+    }       
+    div.container .inner-page .digital-daily-right {
+        float: left !important;
+        width:535px !important;
+    }
+    .digi-subpage .col-sm-4 { margin-right: 5%; }
+    .digi-subpage .col-sm-8 {
+        width: 60.667%;
+    }
+     /*digital daily*/
+    .ca-container.ca-resources .ca-item-main .play {
+        margin: 0px 0px 27px;
+        bottom:0px;
+        right:1px;
+    }
+}
+/** Smartphones (portrait and landscape) ----------- **/
+@media only screen and (max-width : 767px) {
+	h1{
+		font-size: 22px;
+	}
+	h2{
+		color: #6e787b;
+		font-size: 16px;
+		line-height: 28px;
+	}
+	h3{
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	.footer .col-md-4{
+		padding-bottom: 15px;
+	}
+	.sub-footer p{
+		width: 100%;
+		text-align: center;
+	}
+	.navbar-nav > li.no-border{
+		border-top: 0px !important;
+		border-bottom: 0px !important;
+	}
+	.inner-page.row .col-md-3 {
+		margin-left:0px;
+		margin-right:0px;
+	}
+	.row{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.container{
+		width: 100% ;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.container.header-text{
+		width:100%;
+		padding: 0px 3.125%;
+		left: 0px;
+		right: 0px;
+		height: auto;
+	}
+	.bio-logo{
+		width: 100px;
+		margin-left: 0px;
+
+	}
+	.header-list, .register-text, .form{
+		display: none;
+	}
+	.form.in{
+		display: block;
+		height: 100vh !important;
+		clear: both;
+		background-color: #034170;
+		float: left;
+		position: absolute;
+		width: 100%;
+		left: 0px;
+		z-index: 5;
+	}
+	.form.in .input-group{
+		margin: auto;
+		display: block;
+		padding:0 15px;
+		height: 90px;
+	}
+	.form.in .navbar-collapse.collapse{
+		display: block !important;
+		background-color: #034170;
+		z-index: 5;
+		position: relative;
+		width: 100%;
+		left: 0px;
+		padding-right: 25px;
+		padding-right: 25px;
+	}
+	.form.in .navbar-nav{
+		height: auto;
+	}
+	/**Custom Search**/
+	.form.in .searchform {
+		width: 100%;
+		border-radius: 4px 4px 4px 4px;
+		-moz-border-radius: 4px 4px 4px 4px;
+		-webkit-border-radius: 4px 4px 4px 4px;
+		overflow: hidden;
+		margin: 0;
+	}
+	.form.in .searchform input{
+		width: 90% !important;
+		max-width: 90% !important;
+		padding: 6px 3.75%;
+		background-color: #0d63a6;
+		color: #fff;
+		border: 0px;
+		height: 36px;
+		float: left;
+		border-radius: 4px 0px 0px 4px;
+		-moz-border-radius: 4px 0px 0px 4px;
+		-webkit-border-radius: 4px 0px 0px 4px;
+		margin-top: 0px;
+	}
+	.form.in .searchform input:focus{
+		box-shadow: none;
+		outline: none;
+	}
+	.form.in .searchform button{
+		background-color: #0d63a6;
+		width: 10%;
+		height: 36px;
+		float: left;
+		border-radius: 0px 4px 4px 0px;
+		-moz-border-radius: 0px 4px 4px 0px;
+		-webkit-border-radius: 0px 4px 4px 0px;
+	}
+	.form.in .searchform .input-group-addon{
+		padding: 0px;
+	}
+	.form.in .searchform span{
+		background-color: #0d63a6;
+		border: 0px;
+		color: #fff;
+	}
+	.form.in .searchform{
+		background-color: #0d63a6;
+	}
+	.close-btn{
+		padding-left: 0px !important;
+		padding-bottom: 15px !important;
+	}
+	.close-btn span{
+		color: #6b8cbe !important;
+	}
+	/**Custom Search Ends**/
+	.static-menu{
+		height:90px;
+	}
+	.static-menu .header-text h2{
+		font-size: 14px;
+		margin-left: -3.125%;
+		margin-right: -3.125%;
+		margin-top: 10px;
+		padding-right: 10px;
+		border-top: 1px solid #252525;
+		border-bottom: 5px solid #6775AF;
+		padding: 0px 10px 3px 10px;
+		margin-bottom: 0px;
+		line-height: 40px;
+		vertical-align: middle;
+	}
+	.static-menu .navbar-nav > li{
+	border-bottom: 0px;
+	}
+	nav.social, .quick-links-tab, .footer-link{
+		display: none;
+	}
+	.sub-footer nav.social{
+		display: block;
+		position: relative;
+		top: 0px;
+		height: auto;
+		clear: both;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.sub-footer nav.social a{
+		display: inline-table;
+		background-color: #034172;
+		border: 1px solid #034788;
+		border-radius: 0px;
+		margin:0 5px 5px 0;
+		padding: 10px;
+	}
+	.navbar-toggle{
+		display: block;
+		margin: 0px;
+		padding:3px 0px 0px 0px;
+		outline: none;
+		border-radius: 0px;
+	}
+	.navbar-toggle .icon-bar{
+		background-color: #6b8cbe;
+		height: 3px;
+	}
+	.navbar-collapse{
+		max-height: 100vh;
+		border-top: 0px;
+		box-shadow: none;
+	}
+	.navbar-collapse.in{
+		overflow-y:visible;
+	}
+	.container > .navbar-collapse{
+		margin: 0px;
+	}
+	.navbar-collapse.collapse{
+		display: none !important;
+	}
+	.navbar-nav{
+		display: block;
+		height: 100vh;
+		padding: 0 15px;
+		float: left;
+	}
+	ul.navbar-nav{
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.navbar-nav > li{
+		width: 100%;
+		border-bottom: 0px solid #065b9e;
+	}
+	.affix{
+		position: absolute;
+	}
+	.affix-top{
+		position: absolute;
+		min-height: 1px;
+		z-index: 5;
+		border-bottom: 0px;
+	}
+	.affix-top .container, .affix-top .navbar-collapse{
+		padding: 0px 0px;
+	}
+	.mobile-top-menu{
+		position: absolute;
+		width: 120px;
+		top: 0px;
+		right: 0px;
+		z-index: 6;
+		padding: 10px 10px 10px 0px;
+		padding-bottom: 7px;
+		
+	}
+	.mobile-top-menu a{
+		padding:3px 10px;
+		font-size: 15px;
+		float: left;
+	}
+	.mobile-top-menu .bordered{
+		border-left: 1px solid #065b9e;
+		border-right: 1px solid #065b9e;
+		margin-right: 7px;
+		border-top: 0px;
+		border-bottom: 0px;
+	}
+	.home-slider{
+		margin-top: 0px;
+	}
+	#mini-logo img{
+		padding:0px 0 10px 15px;
+		margin: 0px;
+	}
+	.home-menu li:after{
+		border-left: 0px;
+	}
+	.home-slider .carousel-indicators{
+		display: none;
+	}
+	.selector-arrows{
+		font-size: 20px;
+		bottom: inherit;
+		top: 45%;
+	}
+	.home-slider span.glyphicon.glyphicon-chevron-left{
+		float: left;
+	}
+	.home-slider span.glyphicon.glyphicon-chevron-right{
+		float: right;
+	}
+	.carousel .item img{
+		width: auto;
+		max-width: inherit;
+		height: 275px;
+		overflow: hidden;
+	}
+	.carousel-caption{
+		width: 60%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		margin-top: 15px !important;
+	}
+	.carousel-caption h1{
+		font-size: 22px;
+		margin-top: 0px;
+	}
+	.carousel-caption p{
+		font-size: 14px;
+	}
+	.slider-switch{
+		width: 100%;
+		float: left;
+		position: relative;
+		height: auto;
+		margin: 10px 0;
+		text-align: center;
+	}
+	.slider-switch div{
+		width: 275px;
+		clear: both;
+		margin-bottom: 10px;
+		float: none;
+		background-color: #6b8cbe;
+		border-radius: 4px 4px 4px 4px;
+		-moz-border-radius: 4px 4px 4px 4px;
+		-webkit-border-radius: 4px 4px 4px 4px;
+	}
+	.thumbnail{
+		margin-bottom: 10px;
+	}
+	.thumbnail img{
+		width: auto;
+		max-width: 100%;
+	}
+	.home-pannels .thumbnail{
+		height: auto;
+	}
+	.thumbnail .caption{
+		/*margin-top: 70px;*/
+	}
+	.home-videos .row{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.ca-item{
+	width:50% !important;
+	}
+	.thanks{
+		background-color: #6b8cbe;
+		border: 0px;
+		font-size: 14px;
+		font-weight: lighter;
+		box-shadow: none;
+		padding-bottom: 0px;
+	}
+	.sponsors{
+		height: auto;
+	}
+	.home-videos{
+		margin-top: 0px;
+		padding-bottom: 15px;
+	}
+	.home-accordion h3{
+		font-size: 20px;
+		color: #005699;
+		border-top:1px solid #e3e3e3;
+		cursor: pointer;
+		padding-top: 15px;
+		margin-bottom: 0px;
+	}
+	.home-accordion div:first-child h3{
+		border-top: 0px;
+	}
+	h3.accordion-toggle:after{
+		content:"\e082";
+	}
+	h3.accordion-toggle.collapsed:after{
+		content:"\e081";
+	}
+	.home-accordion h3:after{
+		font-family: 'Glyphicons Halflings';
+		float: right;
+		font-size: 12px;
+		color: #6b8cbe;
+	}
+	.home-accordion .col-md-4.middle{
+		border: 0px;
+	}
+	.home-accordion .in{
+		padding-top: 15px;
+	}
+	.big-footer{
+		padding-top: 10px;
+		margin-bottom: 0px;
+	}
+	.sub-footer{
+		text-align: center;
+	}
+	.navbar-default .navbar-nav > li > a:hover .navbar-nav > li > .dropdown-menu{
+		display: none;
+	}
+	.push-menu{
+		display: block;
+		position: absolute;
+		background-color:#034172;
+		z-index: 5;
+		/*height: 0px;*/
+		width: 100%;
+		top: 0px;
+	}
+	#menu, .multilevelpushmenu_wrapper {
+		width: 100% !important;
+
+	}
+	.multilevelpushmenu_wrapper .multilevelpushmenu_inactive{
+		margin-left: 0px !important;
+	}
+	.multilevelpushmenu_wrapper ul{
+		display: block !important;
+	}
+	.back-menu{
+		font-family: 'Glyphicons Halflings';
+		float: right;
+		font-size: 12px;
+		color: #fff;
+		content:"\e082";
+	}
+	.home-accordion .collapse{
+	display:none;
+	}
+	.search-menu{
+		width: 100%;
+		z-index: 6;
+		background-color: red;
+		position: absolute;
+		top: 0px;
+	}
+	/***Interior Page***/
+	.inner-page .myBIO-callout .row{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.inner-page .row{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.topBanner{
+		height: auto;
+        display:none;
+	}
+	.topBanner h1{
+		font-size: 18px;
+		margin-left: 0px;
+		text-align: center;
+		margin-top: -20%;
+	}
+	.topBanner .banner{
+		width: 100%;
+		margin: 0px;
+		overflow: hidden;
+	}
+	.left-column{
+		display: none;
+	}
+	.inner_ad{
+		width: 100%;
+        display:none;
+	}
+	.inner_ad img{
+		width: 100%;
+	}
+	.inner_ad iframe{
+		width: 100%;
+	}
+	.inner_ad iframe img{
+		width: 100%;
+	}
+	.inner-page.row {
+		margin-top:25px;
+	}
+	.container .resources ul.accordion > li > a{
+		padding: 10px 20px;
+	}
+	.container .resources ul{
+		margin: 0px -25px;
+	}
+	.inner-page .ca-container,  .container .resources .sub-data ul{
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+    .inner-page .col-md-9, .inner-page .col-sm-9 {
+        margin-top: 1%;
+    }
+	.resources .resources_block{
+		padding:0px 10px 10px 0px;
+		width: 100%;
+	}
+	.modal iframe{
+		width: 100%;
+	}
+	.search-form-field{
+		display: block;
+	}
+	.speakers.one-col{
+		border-top: 2px solid #e2e2e2;
+		padding-top: 25px;
+	}
+	.speakers-list{
+		width: 100%;
+		height: auto;
+		float: left;
+	}
+	ul.one-col ul{
+		margin: 0px;
+		padding:0px;
+	}
+	.speakers.one-col ul > li{
+		width: 100%;
+	}
+	.alignleft{
+		width: 25%;
+		margin: 0px;
+	}
+    img.aligncenter{
+		width: 95%;
+		margin: 0px;
+	}
+	ul.one-col ul li .col{
+		width: 70%;
+		padding:0px;
+	}
+	.myBIO-callout{
+		margin: 0 -10px 15px -15px;
+	}
+	.callout-center-text{
+		text-align: center;
+	}
+	.for-callout{
+		width: 100% !important;
+		height: 40px;
+		background-color: #b1cd31 !important;
+		color: #fff !important;
+		border-radius:15px 0px 15px 0px;
+		-moz-border-radius:15px 0px 15px 0px;
+		-webkit-border-radius:15px 0px 15px 0px;
+	}
+	.for-callout em{
+		font-style: normal !important;
+		text-transform: uppercase !important;
+	}
+	.feedEntry{
+		height: auto !important;
+		border-bottom: 0px !important;
+	}
+	.green-bullet-ul{
+		margin-bottom:30px; 
+	}
+	.early-bird h2{
+		padding-top: 47px;
+	}
+	.contact-us{
+		padding: 20px;
+	}
+	.contact-us h2{
+		font-size: 18px;
+	}
+	.contact-us td{
+		width: 100%;
+		float: left;
+		padding:10px 0 !important;
+	}
+	.contact-us p, .contact-us .button{
+		width: 100%;
+		float: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+	.dd-landingpage-item{
+		display: block;
+	}
+	.dd-landingpage-cat{
+		padding-bottom: 6px;
+	}
+	.inner-page .sponsors, .inner-page .footer{
+		display: none;
+	}
+	.box{
+		margin-bottom: 30px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.dd-articlefeed{
+		margin-left: 0px;
+	}
+	.dd-videofeed{
+		width: 100%;
+	}
+	.dd-videoitem{
+		width: 226px;
+		margin: auto;
+	}
+	.dd-banner{
+		height: auto;
+	}
+	.vid-toggler{
+		margin-top: -30px !important;
+		margin-bottom: 10px !important;
+	}
+	.ca-container.ca-resources .ca-wrapper{
+		height: 270px;
+	}
+	.partnering.ca-container.ca-resources .ca-item-main .play{
+		bottom: 99px;
+		margin-bottom: 0px;
+	}
+	.fixed-data {
+		height: 500px
+	}
+	.container .resources ul.accordion > li > a{
+		padding-right: 35px;
+	}
+	.asyur .pannel{
+		width: 100%;
+	}
+	.right-margin{
+		margin-right: 20px;
+	}
+	.co-located-events, .co-located-events td{
+		width: 100% !important;
+		float: left;
+		padding: 0px;
+	}
+	/***Interior Page Ends***/
+	/**Registration Page**/
+	.registration-tab .nav-tabs li a{
+		background-color: #fff;
+		bottom: 0px;
+		margin-bottom: 10px;
+		display: inline-block;
+		width: 100%;
+	}
+	.registration-tab .nav-tabs li.active a{
+		background-color: #fff;
+		bottom: 0px;
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+    #search_term {
+        padding: 5px;
+    }
+	/**Registration Page Ends**/
+	
+    /*Styled added*/
+    #aspnetForm select.full {
+        width:510px;
+    }
+    #aspnetForm .full {
+         width:510px;
+    }
+        #aspnetForm .half {
+        width: 250px;
+    }
+     #aspnetForm .submit input {
+        padding: 12px 30px;
+    }
+    .pavilion ul li {
+        font-size: 11px;
+        width: 22%;
+    }
+    .pavilion div.footer-box {
+        padding: 15px;
+    }
+    .pavilion div.footer-box ul {
+        padding-left: 5px;
+    }
+    .pavilion div.myBIO-callout {
+        padding: 15px;
+    }
+    .pavilion div.myBIO-callout ul {
+        padding-left: 5px;
+    }
+    div.exhibit-partner img {
+        width: 375px;
+    }
+    div.international-delegation div.footer-box table tbody tr td {
+        min-width:100px !important;
+        width:100px;
+    }
+    div.international-delegation div.myBIO-callout table tbody tr td {
+        min-width:100px !important;
+        width:100px;
+    }
+
+    div.international div.footer-box table tbody tr td {
+        min-width:100px !important;
+        width:100px;
+    }
+    div.international div.myBIO-callout table tbody tr td {
+        min-width:100px !important;
+        width:100px;
+    }
+    a.viewcomp-innovation {
+        display: block;
+        margin:-25px auto 0px;
+        text-align:center;
+    }
+    .col-md-9 iframe {
+        width: 100% !important;
+    }
+    div.pavilion-benefits img.alignleft {
+        width: 40% !important;
+    }
+    div.product-focus-zones img.alignleft {
+        width: 18% !important;
+    }
+    div.biotech-feed {
+        width: 100%;
+    }
+    div.bio-process-theater img.alignleft {
+        margin: 0px 7px 0px 0px;
+    }
+    /*Styles added*/
+/* style book house page */
+    div.book-house {
+    width: 550px !important;
+    padding-left:10px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 400px !important;
+    margin: 0px 0px 0px 15px;
+}
+div.book-house > #book-iframe {
+    width: 425px !important;
+    height :500px;
+}
+div.book-house-container div.footer-box {
+    padding:15px;
+}
+div.book-house-container div.myBIO-callout {
+    padding:15px;
+}
+/* style book house page */
+    .ca-container.ca-resources .ca-item-main .play {
+        margin: 0px 0px 55px;
+        bottom:0px;
+        right:1px;
+    }
+    div.dd-landingpage-cat span.dd-playbutton{
+        right: -16px !important;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+	
+	.container{
+		width: 93.75% ;
+		padding-left: 3.125%;
+		padding-right: 3.125%;
+	}
+	.ca-item{
+	width:100% !important;
+	}
+	.ca-nav{
+		margin-left: 85% !important;
+	}
+	.carousel-caption p{
+		line-height: 19px;
+	}
+	.carousel-caption p .btn-primary{
+		margin-top: 5px;
+		padding: 10px 20px;
+	}
+	.carousel-caption{
+		margin-top: 0px !important;
+	}
+	.ca-container.ca-resources .ca-wrapper{
+		width: 280px;
+		margin: auto;
+	}
+	.inner-page .container .resources ul.accordion li.res-article{
+		width: 280px;
+		margin: auto;
+		display: block;	
+	}
+	.topBanner{
+		height: 100px;
+        display:none;
+	}
+	.topBanner h1{
+		font-size: 18px;
+		margin-left: 0px;
+		text-align: center;
+		margin-top: -20%;
+	}
+	.topBanner .banner{
+		width: auto;
+		margin: 0px;
+		overflow: hidden;
+		max-height: 100px;
+	}
+	.fixed-mob-width p{
+		min-width: 65px;
+	}
+	.btn.green-box{
+		width: 100%;
+		box-sizing:border-box;
+	}
+    /* added additional styles*/
+    #search_term {
+   padding: 5px;
+}
+ td {
+        min-width: 95px !important;
+        padding: 6px;
+        vertical-align: top;
+    }
+
+     #aspnetForm select.full {
+        width:290px;
+    }
+    #aspnetForm .full {
+         width:290px;
+    }
+    #aspnetForm .submit input {
+        padding: 10px 25px;
+    }
+    #aspnetForm .half {
+        width: 150px;
+    }
+    .pavilion ul li {
+        font-size: 8px;
+        width: 25%;
+    }
+    .pavilion div.footer-box {
+        padding: 8px;
+    }
+    .pavilion div.footer-box ul {
+        padding-left: 0px;
+    }
+    .pavilion div.myBIO-callout {
+        padding: 8px;
+    }
+    .pavilion div.myBIO-callout ul {
+        padding-left: 0px;        
+    }
+     div.exhibit-partner img {
+        width: 275px;
+    }
+    div.international-delegation div.footer-box table tbody tr td {
+        min-width:60px !important;
+        width:60px;
+        padding:5px !important;
+    }
+    div.international-delegation div.myBIO-callout table tbody tr td {
+        min-width:60px !important;
+        width:60px;
+        padding:5px !important;
+    }
+
+    div.international div.footer-box table tbody tr td {
+        min-width:60px !important;
+        width:60px;
+        padding:5px !important;
+    }
+    div.international div.myBIO-callout table tbody tr td {
+        min-width:60px !important;
+        width:60px;
+        padding:5px !important;
+    }
+    .col-md-9 iframe {
+        width: 100% !important;
+    }
+
+/* style book house page */
+div.book-house {
+    width: 410px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 350px !important;
+    margin: 0px;
+}
+div.book-house > #book-iframe {
+    width: 345px !important;
+    height :500px;
+    font-size:10px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house-container div.footer-box {
+    padding:12px;
+}
+div.book-house-container div.myBIO-callout {
+    padding:12px;
+}
+/* style book house page */
+
+    div.pavilion-benefits img.alignleft {
+        width: 70% !important;
+    }
+    .inner-page .col-md-9, .inner-page .col-sm-9 {
+        margin-top: 0%;
+    }
+    .static-menu .header-text h2 {
+        font-size: 12px;
+    }
+    .inner_ad {
+        display: none;
+    }
+    div.product-focus-zones img.alignleft {
+        width: 30% !important;
+    }
+    div.bio-process-theater img.alignleft {
+        width: 40%;
+        margin: 0px 7px 0px 0px;
+    }
+    div.academic-opportunities img.alignleft {
+        width: 36%;
+    }
+ /* added additional styles*/
+    .ca-container.ca-resources .ca-item-main .play {
+        margin: 0px 0px 62px 0px;
+        bottom:0px;
+        right:1px;
+    }
+
+}
+
+@media only screen and (max-width : 420px) {
+/* style book house page */
+div.book-house {
+    width: 360px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 315px !important;
+    margin: 0px;
+}
+div.book-house > #book-iframe {
+    width: 310px !important;
+    height :500px;
+    font-size:10px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house-container div.footer-box {
+    padding:12px;
+}
+div.book-house-container div.myBIO-callout {
+    padding:12px;
+}
+
+/* style book house page */
+}
+
+
+@media only screen and (max-width : 380px) {
+/* style book house page */
+div.book-house {
+    width: 345px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 270px !important;
+    margin: 0px;
+}
+div.book-house > #book-iframe {
+    width: 265px !important;
+    height :500px;
+    font-size:10px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house-container div.footer-box {
+    padding:10px;
+}
+div.book-house-container div.myBIO-callout {
+    padding:10px;
+}
+    div.product-focus-zones img.alignleft {
+        width: 40% !important;
+    }
+
+     .ca-container.ca-resources .ca-item-main .play {
+        margin: 0px 0px 62px;
+        bottom:0px;
+        right:1px;
+    }
+/* style book house page */
+}
+
+@media only screen and (max-width : 320px) {
+/* style book house page */
+div.book-house {
+    width: 335px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house > div.book-house-desc {
+    width: 270px !important;
+    margin: 0px;
+}
+div.book-house > #book-iframe {
+    width: 265px !important;
+    height :500px;
+    font-size:10px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+div.book-house-container div.footer-box {
+    padding:4px;
+}
+div.book-house-container div.myBIO-callout {
+    padding:4px;
+}
+/* style book house page */
+
+    .ca-container.ca-resources .ca-item-main .play {
+        margin: 0px 0px 62px;
+        bottom:0px;
+        right:1px;
+    }
+}
+
+/**Clearfix**/
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    display: block;
+}
+.bordered{
+	border: 1px solid #e2e2e2;
+}
+.margin-top{
+	margin-top: 20px;
+}
+.accordion p{
+	margin: 15px 0;
+}
+.accordion-toggle {cursor: pointer;}
+.accordion-content {display: none;}
+.accordion-content.default {display: block;}
+.registration-accordion{
+	border: 1px solid #dcdcdc;
+	margin: 0px;
+	padding: 10px;
+	top: -30px;
+	position: relative;
+	background-color: #fff;
+	border-top: 0px;
+}
+.registration-accordion .accordion-toggle{
+	border-top: 1px solid #dcdcdc;
+	font-size: 14px;
+	color: #6b8cbe;
+	padding: 5px 10px 0px 10px;
+	margin: 0 0 5px 0;
+}
+.registration-accordion .accordion-toggle span:before{
+	width: 12px;
+	height: 12px;
+	content: "\e081";
+	color: #6b8cbe;
+}
+.registration-accordion.active .accordion-toggle span:before{
+	width: 12px;
+	height: 12px;
+	content: "\e082";
+	color: #6b8cbe;
+}
+.inline{
+	display: inline-block;
+}
+
+#topItem6 ul.dropdown-menu {left:-370px;}
+#topItem7 ul.dropdown-menu {left:-350px;}
+
+#rait-logo
+{
+	position: absolute;
+	left: 85%;
+	top:10px;
+}
+#ieee-logo
+{
+	position: absolute;
+	left: 2%;
+	top: 20px;
+	height:70px;
+	width: 190px;
+}
+
+#main_nav_top{
+	margin-right: 0;
+	margin-left: 0%;
+	padding-right: 10%
+}
